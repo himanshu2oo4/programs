@@ -1,0 +1,4318 @@
+
+
+MAHARAJA SURAJMAL INSTITUTE
+Affiliated to GGSIP University & NAAC ‘A’ grade accredited
+
+
+ 
+
+
+DEPARTMENT OF COMPUTER
+APPLICATIONS
+
+WEB TECHNOLOGIES
+Practical File
+Subject Code – BCA 175
+
+	SUBMITED BY					SUBMITED TO
+		Himanshu Rank-456					Ms. Nikita Malik 
+		114210800083					Assistant Professor. MSI
+		1st Sem, 2nd Shift
+		
+
+
+INDEX
+S.No 	Content	Date	Pg. N	Sign
+1	Create your CV using basic HTML tags 	27/12/2021	1	
+2	Create a web page with following specification:
+a)	An ordered list having name of your friends
+b)	an unordered list specifying hobbies.
+c)	some link to various search engines.
+d)	links to five different web pages, created by you, opening in new window.
+e)	a link at top of page that when clicked jumps all the way to bottom of page.
+f)	a link at the bottom of page so that when clickd jumps all the way to the top of page.	28/12/2021		
+3	Create the following unordered/ordered nested list as shown in figure.	30/12/2021		
+4	Create a timetable of your class using HTML tags.	30/12/2021		
+5	Create the following table as shown using HTML.	30/12/2021		
+6	Create the following form in HTML as shown.	31/12/2021		
+7	Create an online application form having following specification:
+a)	position applied for(autofocus), name, nationality, gender, birth(selected from autopicked of a text area), address, telephone number and email(required), password (required).
+b)	Educational history/employment/training in terms of employer history and number of years of experience selected from slider. set max – 10
+c)	personal statement
+d)	two reference including name, occupation, relationship, address, telephone.
+e)	a submit and clear button	03/01/2022		
+8	Create a web page showing India’s map and create hotspot on five different states and link to the e-government site of the respective states	04/01/2022		
+9	Create a webpage using three frames and link them to an image, audio and video as shown in figure.	04/01/2022		
+10	Create a webpage having six frame and link each frame with five different webpages.	 04/01/2022		
+11	Create the following frameset as shown in figure.	 06/01/2022		
+12	Create an iframe and write some line before and after it.	   06/01/2022		
+13	Create a list in HTML using CSS as shown in figure	12/01/2022		
+14	Create a Zebra table using CSS in HTML	13/01/22022		
+15	Create a CSS based button with a hover able dropdown menu	14/01/2022		
+16	Use two images and using CSS transition property on hover change from one to another 	14/01/2022		
+17	Demonstrate 2d and 3d transform using CSS Property	18/01/2022		
+18	Write about India using an external CSS sheet 	19/01/2022		
+19	Create a Webpage with 3 Equal columns using bootstrap	21/01/2022		
+20	Create a Webpage containing various types of bootstrap tables	25/01/2022		
+21	Create a Webpage containing various types of bootstrap images	27/01/2022		
+22	Create a Webpage containing various types of Bootstrap Buttons	28/01/2022		
+23	Create a Webpage containing various Bootstrap typography classes	28/01/2022		
+24	Create a webpage to display the headings using Bootstrap Jumbotron and Glyphicons	31/01/2022		
+25	Create XML file containing note as the root element and to from ,subject and 
+Body as its child element.	03/02/2022		
+26	Create a well formed XML file having 5 tags food menu , category name ,price and calories . food menu is the main parent element that contains category as the child element .category is the parent element of name , price and calories .
+	03/02/2022		
+27	Create a valid xml document containing the tags mentioned in the 25th question (use internal DTD)	04/02/2022		
+28 	Create a valid XML document containing employee as the root tag and empname ,enpno,salary,department as its child tags .Use external DTD to implement it .	04/02/2022		
+29	Create an external DTD for XML file mentioned in 26th QUES	04/02/2022		
+30 	Create an XML file and use external style sheet for providing styling to xml file .Each element should use atleast 4 styling attributes. 	07/02/2022		
+31	Create an XML program containing book information and also create its XSL document includes sorting feature .	10/02/2022		
+32 	Create XML file in the given format 
+<cart>
+<product>
+        <pname>Notebook </pname>
+        <cost>50 </cost>
+        <discount>10 </discount>
+ </product>
+<product>
+      <pname>PenSet</pname>
+      <cost>150</cost> 
+      <discount>50</discount>
+</product>
+</cart>
+Using XSLT display the XML data in the table format ,Choose different color for product above 100 and below 100.	16/02/2022		
+33	Create a DTD for the above XML file and validate the XML in validator.	17/02/2022		
+34	Write an XML program to accept student details(name ,ID ,Course, CGPA). Write an XSL to display the list of students in descending order of cgpa.	17/02/2022		
+
+HTML Introduction:- 
+What is HTML?
+•	HTML stands for Hyper Text Markup Language
+•	HTML is the standard markup language for creating Web pages
+•	HTML describes the structure of a Web page
+•	HTML consists of a series of elements
+•	HTML elements tell the browser how to display the content
+•	HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+•	HTML language is not case sensitive.
+HTML Elements
+The HTML element is everything from the start tag to the end tag:
+<tagname>Content goes here...</tagname>
+Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an ending tag.
+HTML elements can be nested (this means that elements can contain other elements.
+HTML Attributes
+•	All HTML elements can have attributes
+•	Attributes provide additional information about elements
+•	Attributes are always specified in the start tag
+•	Attributes usually come in name/value pairs like: name="value"
+1.	The href attribute:- The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+2.	The src attribute:- The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed.
+3.	The width and height attribute:- The tags should also contain the width and height attributes, which specifies the width and height.
+4.	The alt attribute:- The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.
+5.	The style attribute:- The style attribute is used to add styles to an element, such as color, font, size, and more.
+6.	The lang attribute:- You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+7.	The title attribute:- The title attribute defines some extra information about an element. The value of the title attribute will be displayed as a tooltip when you mouse over the element.
+HTML Documents
+i.	All HTML documents must start with a document type declaration: <!DOCTYPE html>. The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags).
+ii.	The HTML document itself begins with <html> and ends with </html>.
+iii.	The visible part of the HTML document is between <body> and </body>.
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags. <h1> defines the most important heading. <h6> defines the least important heading.
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+HTML Paragraphs
+HTML paragraphs are defined with the <p> tag. These tags are used to define a block of text as a paragraph. HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+HTML Horizontal Rule
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule. This element is used to separate content (or define a change) in an HTML page. It is an empty tag.
+HTML Line Break
+The HTML <br> element defines a line break. Use <br> if you want a line break (a new line) without starting a new paragraph. It is an empty tag.
+
+HTML Tags Formatting
+HTML contains several elements for defining text with a special meaning. Formatting elements were designed to display special types of text:
+•	<b> - Bold text
+•	<strong> - Important text
+•	<i> - Italic text
+•	<em> - Emphasized text
+•	<mark> - Marked text
+•	<small> - Smaller text
+•	<del> - Deleted text
+•	<ins> - Inserted text
+•	<sub> - Subscript text
+•	<sup> - Superscript tex
+HTML Lists
+HTML lists allow web developers to group a set of related items in lists.
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets (small black circles) by default.
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numbers by default.
+HTML also supports description lists. A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term
+An unordered HTML list:                                                        A description list:-
+•	Item                                                                                      Coffee
+•	Item                                                                                               - black hot drink
+•	Item                                                                                      Milk
+•	Item                                                                                               - white cold drink
+An ordered HTML list:
+1.	First item
+2.	Second item
+3.	Third item
+
+
+HTML Links
+HTML links are defined with the <a> tag. The link tag is used to define a link between a document and an external resource. The link tag is mainly used to link to external style sheets. This element can appear multiple times but it goes only in the head section.
+HTML Images
+HTML images are defined with the <img> tag. The HTML <img> tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image. The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+The <img> tag has two required attributes:
+•	src - Specifies the path to the image
+•	alt - Specifies an alternate text for the image
+
+HTML Tables
+HTML tables allow web developers to arrange data into rows and columns. It consists of table cells inside rows and columns. 
+Tag 	Description 
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Define a row in a table
+<td>	Define a cell in a table
+<colspan>	Merges columns
+<rowspan>	Merges rows
+<caption>	Defines a table caption
+
+HTML Lists
+HTML lists allow web developers to group a set of related items in lists.
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag. The list items will be marked with bullets (small black circles) by default.
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag. The list items will be marked with numbers by default.
+HTML also supports description lists. A description list is a list of terms, with a description of each term. The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term
+An unordered HTML list:                                                        
+•	Item                                                                                    
+•	Item                                                                                               
+•	Item                                                                                      
+•	Item                                                                                               
+An ordered HTML list:
+1.	First item
+2.	Second item
+3.	Third item
+4.	Fourth item
+HTML id attribute
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. The syntax for id is: write a hash character (#), followed by an id name.
+Anchor Tag
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+By default, links will appear as follows in all browsers:
+•	An unvisited link is underlined and blue
+•	A visited link is underlined and purple
+•	An active link is underlined and red
+HTML  <form> tag
+An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.
+An HTML form facilitates the user to enter data that is to be sent to the server for processing such as name, email address, password, phone number, etc. .
+The <form> tag is used to create an HTML form for user input. The <form> element can contain one or more of the following form elements:
+•	<input> :- It defines an input control.
+•	<textarea> :- It defines a multi-line input control.
+•	<button> :- It defines a clickable button
+•	<select> :-  It defines a drop-down list.
+•	<option> :- It defines an option in a drop-down list.
+•	<optgroup> :- It defines a group of related options in a drop down list.
+•	<fieldset> :- It groups the related element in a form.
+•	<label> :- It defines a label in an input element.
+•	<output> :- It defines the result of a calculation.
+<label> tag
+It is considered better to have label in form. As it makes the code parser/browser/user friendly. If you click on the label tag, it will focus on the text control. To do so, you need to have for attribute in label tag that must be same as id attribute of input tag.
+Input type
+•	Password :- The password is not visible to the user in password field control.
+•	Email :- The email field in new in HTML 5. It validates the text for correct email address. You must use @ and . in this field.
+•	Radio :- The radio button is used to select one option from multiple options. It is used for selection of gender, quiz questions etc.
+•	Checkbox :- The checkbox control is used to check multiple options from given checkboxes.
+•	Submit :- HTML <input type="submit"> are used to add a submit button on web page. When user clicks on submit button, then form get submit to the server.
+Image map
+The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+Usemap attribute
+The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+•	Use the HTML <map> element to define an image map
+•	Use the HTML <area> element to define the clickable areas in the image map
+•	Use the HTML usemap attribute of the <img> element to point to an image map
+HTML Frames
+HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. 
+To use frames on a page we use <frameset> tag instead of <body> tag. The <frameset> tag defines, how to divide the window into frames. The rows attribute of <frameset> tag defines horizontal frames and cols attribute defines vertical frames. Each frame is indicated by <frame> tag and it defines which HTML document shall open into the frame.
+Attributes 
+•	Src :- This attribute is used to give the file name that should be loaded in the frame.
+•	Name :- This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into.
+•	Frameborder :- This attribute specifies whether or not the borders of that frame.
+•	Marginwidth :- This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content.
+•	Marginheight :- This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents.
+•	Scrolling :- This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". 
+
+HTML Iframe tag
+The iframe HTML element represents a nested browsing context, embedding another HTML page into the current one. The iframe tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.
+
+Attributes
+•	Src :- This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL.
+•	Name :- This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+•	Frameborder :- This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the frameset tag .
+•	Marginwidth :- This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. 
+HTML Practicals AND oUTputs:
+Practical 1 code and output :
+Objective : Create your CV using basic HTML tags
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="leftside">
+            <div class="profiletext">
+                <div class="imgbox">
+                    <img src="./downloads/sundarpichai.jpg" alt="">
+                </div>
+                <h2>Himanshu<br> <span>Web Developer</span></h2>
+            </div>
+            <div class="contactinfo">
+                <h3 class="title">Contact Info :</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+123456789</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">mymail@gmail.com</span>
+                    </li><li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">mywebsite.com</span>
+                    </li><li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin/me</span>
+                    </li><li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Haryana,New Delhi</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactinfo_education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2021-2024</h5>
+                        <h4>Bca</h4>
+                        <h5>from: Maharaja Surajmal Institute</h5>
+                    </li>
+                    <li>
+                        <h5>In 2021</h5>
+                        <h4>Passed 12<sup>th</sup></h4>
+                        <h5>from : APS school</h5>
+                    </li>
+                    <li>
+                        <h5>In 2019</h5>
+                        <h4>Passed 10<sup>th</sup></h4>
+                        <h5>From Mata kasturi school</h5>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactinfo_language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">Html</span>
+                        <span class="percent">
+                            <div style="width: 95%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Css</span>
+                        <span class="percent">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li><li>
+                        <span class="text">C++</span>
+                        <span class="percent">
+                            <div style="width: 99%;"></div>
+                        </span>
+                    </li><li>
+                        <span class="text">Python</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!------------------------ Right side work ----------------------------------------- -->
+
+        <div class="rightside"></div>
+    </div>
+    
+    
+</body>
+</html>
+
+Output:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 2 Code and output :- 
+Objective: Create a web page with following specification:
+a)	An ordered list having name of your friends
+b)	an unordered list specifying hobbies.
+c)	some link to various search engines.
+d)	links to five different web pages, created by you, opening in new window.
+e)	a link at top of page that when clicked jumps all the way to bottom of page.
+a link at the bottom of page so that when clickd jumps all the way to the top of page.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./downloads/background2.jpg);
+            background-size: 100%;
+        }
+        .hello{
+            
+            color: black;
+            margin-top: 10px;
+        }
+        a:link{
+            color: brown;
+            background-color:black;
+            
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+            
+        }
+        a:active{
+            color: yellow;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="#bottom">Bottom</a>
+     <marquee behavior="scroll" direction="left" style="font-size: 40px;"><h2><u>Assignment 4 Web technology </u> </h2></marquee>
+    <h4 id="#top">Name of My Friends</h4>
+   
+    <ol type="i">
+        <li>Hello</li>
+        <li>Tata</li>
+        <li>Bye</li>
+        <li>Chalo Bye Ab</li>
+    </ol>
+    <h4>Hobbies</h4>
+    <ul type="square">
+        <li>Gaming</li>
+        <li>Playing Chess</li>
+        <li>Badminton</li>
+        <li>Football</li>
+        <li>Bss Maje katna</li>
+    </ul>
+    <h4>Links to various Search Engines</h4>
+    <ul>
+        <li>
+            <a href="https://www.google.com" target="blank">Google</a>
+
+        </li>
+        <li>
+            <a href="https://www.yahoo.com" target="blank">Yahoo</a>
+        </li>
+        <li>
+            <a href="https://www.duckduckgo.com" target="blank">Duck Duck go</a>
+        </li>
+        <li>
+            <a href="https://www.bing.com" target="blank">Bing</a>
+        </li>
+    </ul>
+
+    <h3>Webpages created By Me</h3>
+    1. <a href="./assignment10.html" target="blank">Assignment 10</a>  &nbsp; &nbsp;&nbsp;&nbsp;
+    2. <a href="./framesassi.html" target="blank">Frames Assignment</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    3. <a href="./map.html" target="blank">Map Assignment</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    4. <a href="./Resume.html" target="blank">Resume</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    5. <a href="./webcomp_himanshu.html" target="blank" >Web Competition</a> <br>
+    <a href="#Top" style="font-size: 30px; text-align: center;">Reach Top</a>
+<div id="#bottom">
+    <h3>--------------- Its End Now ---------------</h3>
+</div>
+</body>
+</html>
+
+Output:  
+Practical 3 Code and Output:- 
+Objective: Create the following unordered/ordered nested list as shown in figure.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<marquee behavior="scroll" direction="right" loop="10" scrolldelay="100"  class="SecAssi"  >
+<h2> <u>Third Practical</u> </h2>
+</marquee>
+<section class="sector" >
+<h3 style="margin-left:50px; color:blueviolet;">Learning Web Development :-</h3>
+
+<ol type="I">
+    <li>Background skills </li>
+    <ol type="A">
+        <li>Unix Commands </li>
+        <li>Vim Text Editor </li>
+    </ol>
+    <li>HTML</li>
+    <ol type="A">
+        <li>Minimal Page</li>
+        <li>Headings</li>
+        <li>Tags</li>
+        <li>Lists</li>
+        <ol type="i">
+            <li>Unordered</li>
+            <li>Ordered</li>
+            <li>Definition</li>
+            <li>Nested</li>
+            
+        </ol>
+        <li>Links</li>
+        <ol>
+            <li>Absolute</li>
+            <li>Relative</li>
+        </ol>
+        <li>Images</li> 
+    </ol>
+    <li>CSS</li>
+    <ol type="A">
+     <li>Anatomy</li>
+     <li>Basics Selectors</li>
+        <ol type="i">
+            <li>Elements</li>
+            <li>Class</li>
+            <li>ID</li>
+            <li>Group</li>
+        </ol>
+        <li>The DOM</li>
+        <li>Advanced Selectors</li>
+        <li>Box Model</li>
+   </ol>
+   <li>Programming</li>
+   <ol type="A">
+        <li>Python</li>
+        <li>Javascript</li>
+   </ol>
+   <li>Database</li>
+   <ol type="A">
+       <li>Flat File</li>
+       <li>Relational</li>
+   </ol>
+</ol>
+</body>
+</html>
+
+
+Output:
+ 
+Practical 4 Code and output:----
+Objective: Create a timetable of your class using HTML tags.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI timetable</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <h2 id="top" style="text-decoration: dotted;text-align: center;">ASSIGNMENT 2</h2>
+    <section class="tphead">
+    <h2>Maharaja Surajmal Institute</h2>
+    <h4 style="text-decoration: underline;">Department of Computer Application</h4>
+    <h4>ONLINE Timetable Second Shift (Session :- DEC-MAY 2021 )</h4>
+</section>
+<h2 style="text-align: center;">BCA FIRST SEM-Section:A (Second Shift)</h2>
+<h4 style="margin-left: 50px;">class coordinator : Ms.Nikita Malik</h4>
+<table border="5px" cellpadding="25px" style="margin-left: 30px;" >
+    <thead>
+        <th style="text-align: center;"> DAY/TIME</th>
+        <th style="text-align: center;"> 8:50-9:50</th>
+        <th style="text-align: center;"> 9:55-10:55</th>
+        <th style="text-align: center;"> 11-12</th>
+        <th style="text-align: center;"> 12:05-1:05</th>
+        <th style="text-align: center;"> 1:05-1:20</th>
+        <th style="text-align: center;"> 1:20-2:20</th>
+        <th style="text-align: center;"> 2:25-3:25</th>
+        <th style="text-align: center;"> 3:25-4:25</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">MON</td>
+            <td style="text-align: center;">WT</td>
+            <td style="text-align: center;">MATHS</td>
+            <td style="text-align: center;">TC</td>
+            <td style="text-align: center;">C</td>
+            <td rowspan="6" style="text-align: center;">Lunch</td>
+            <td colspan="2" style="text-align: center;">WT/C LAB</td>
+            <td style="text-align: center;">FIT LAB*</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">TUE</td>
+            <td style="text-align: center;">MATHS</td>
+            <td style="text-align: center;">WT</td>
+            <td colspan="2" style="text-align: center;">WT/C lab</td>
+            
+            <td colspan="2" style="text-align: center;">FIT LAB</td>
+            <td style="text-align: center;">FIT LAB*</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">WED</td>
+            <td style="text-align: center;">C</td>
+            <td style="text-align: center;">MATHS</td>
+            <td style="text-align: center;">WT</td>
+            <td style="text-align: center;">FIT</td>
+            <td style="text-align: center;">TC</td>
+            <td style="text-align: center;">*Maths in second week</td>
+            <td style="text-align: center;">*FIT in fourth week</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">THU</td>
+            <td style="text-align: center;">TC</td>
+            <td style="text-align: center;">C</td>
+            <td colspan="2"style="text-align: center;">WT/C LAB</td>
+            <td style="text-align: center;">FIT</td>
+            <td style="text-align: center;">MATHS(A+B Bridge)</td>
+            <td style="text-align: center;">-</td>
+            
+        </tr>
+        <tr>
+            <td style="text-align: center;">FRI</td>
+            <td colspan="2" style="text-align: center;">WT/C LAB</td>
+            <td style="text-align: center;">C</td>
+            <td style="text-align: center;"> FIT</td>
+            <td style="text-align: center;">TC</td>
+            <td style="text-align: center;">WT</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">SAT</td>
+            <td style="text-align: center;">MATHS</td>
+            <td style="text-align: center;">FIT</td>
+            <td colspan="2" style="text-align: center;">FIT LAB</td>
+            <td style="text-align: center;">MATHS(A+B Bridge)</td>
+            <td style="text-align: center;">*Maths(A+B bridge Fourth Week)</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
+Output: On Next page---
+ 
+
+
+
+Practical 5 Code and Output:------------------- 
+Objective : Create the following table as shown using HTML.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image table</title>
+</head>
+<body>
+<table border="5px" cellpadding="30px" style="margin-left: 400px;">
+    <tbody>
+        <tr>
+            <td>
+                <img src="./downloads/vodafone.png" alt="" width="100px">
+
+            </td>
+            <td>
+                <img src="./downloads/reliance.jpg" alt="" width="100px">
+            </td>
+            <td>
+                <img src="./downloads/tata_indicom.png" alt="" width="100px">
+            </td>
+            <td>
+                <img src="./downloads/airtel.png" alt="" width="100px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./downloads/tata_docomo.png" alt="" width="100px">
+            </td>
+            <td style="background-color: cadetblue;text-align: center;" colspan="2">
+              <b> Table With Images</b>
+            </td>
+            <td>
+                <img src="./downloads/aircel.png" alt="" width="100px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./downloads/telenor.jpg" alt="" width="120px">
+            </td>
+            <td>
+                <img src="./downloads/mts.png" alt="" width="100px">
+            </td>
+            <td>
+                <img src="./downloads/airtel.png" alt="" width="100px">
+            </td>
+            <td>
+                <img src="./downloads/tata_docomo.png" alt="" width="100px">
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+Output: 
+ 
+
+
+
+
+Practical 6 Code and Output:------
+Objective : Create the following form in HTML as shown.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image table</title>
+</head>
+<body>
+<marquee behavior="scroll" direction="right" loop="10" class="SecAssi">
+    <h2><u> <i> Sixth Practical </i></u> </h2>
+</marquee>
+
+<!-- creating a form  -->
+<hr>
+<h2 style="text-align: center;font-style: italic;">Computer Society of India convention 2021 Participants Record </h2>
+<hr>
+
+<form action="">
+1.Name of the Participant: <input type="text" name="Name" id="Name" placeholder="Enter name " required> <br>
+
+<p style="margin-top: 20px;"> 2.Address: street <input type="text" name="Address" id="Address"> Town <input type="text" name="Town" id="Town"></p>
+<p style="margin-top: 5px;">State <input type="text" name="State" id="State"> Pincode <input type="text" name="Pincode" id="Pincode"> </p>
+<p>
+    3.Select the work you are involved <select name="Workplace" id="Workplace">
+        <option value="">------ WorkPlaces -------</option>
+        <option value="Computer_Education">Computer Education</option>
+        <option value="Computer_science">Computer science</option>
+        <option value="Coding_society">coding society</option>
+        <option value="Event_Management">Event management</option>
+        <option value="social_worker">Social Worker</option>
+    </select>
+</p>
+<p>
+    4.Select any Tutorial You Wish To Attend. <br>
+     &nbsp;&nbsp; &nbsp;&nbsp;  16<sup>th</sup> April 2021 <select name="Tutorial" id="Tutorial">
+        <option value="">-----Select Tutorial --------</option>
+        <option value="E-Commerce">E-Commmerce</option>
+        <option value="Web-tech">Web-tech</option>
+        <option value="Life-Goals">Life-Goals</option>
+        <option value="Life-Lessons">Life-Lessons</option>
+    </select>
+   &nbsp;&nbsp; 17<sup>th</sup> April 2021 <select name="17_tutorials" id="17_tutorials">
+       <option value="">----Select Tutorial-----</option>
+       <option value="Very_large_database">Very Large Database</option>
+       <option value="Business_startups">Business Startups</option>
+       <option value="Computer_fundamentals">Computer Fundamentals</option>
+       <option value="Data-science">Data science</option>
+   </select>
+</p>
+
+5.Type Any of Your Requirements In The Box. <br>
+<p style="margin-left: 15px;margin-top: 2px;">
+    <textarea name="Requirements" id="Requirements" cols="35" rows="5" placeholder="enter your requirements" ></textarea>
+</p>
+<p class="buttons" style="margin-left: 10px;">
+<input type="button" value="Start Over">
+<input type="button" value="Send Over">
+</p>
+<br>
+<input type="submit" value="Submit" width="100px" style="margin-left: 60px;">
+</form>
+</body>
+</html>
+
+Output:
+ 
+
+Practical 7 Code and Output:----------
+Objective : Create an online application form having following specification:
+a)	position applied for(autofocus), name, nationality, gender, birth(selected from autopicked of a text area), address, telephone number and email(required), password (required).
+b)	Educational history/employment/training in terms of employer history and number of years of experience selected from slider. set max – 10
+c)	personal statement
+d)	two reference including name, occupation, relationship, address, telephone.
+e)	a submit and clear button
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Form</title>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" loop="10" style="font-size: 40px; color: coral;"><h2> <i> <u> Application Form </u></i></h2></marquee>
+
+    <p>1. Name : <input type="text" name="name" id="name" required placeholder="Enter your name"> </p>
+    
+    2. Nationality : <select name="nationality" id="nationality">
+        <option value="">----Select Nationality----</option>
+        <option value="Indian">Indian</option>
+        <option value="American">American</option>
+        <option value="Russian">Russian</option>
+        <option value="Japanese">Japanese</option>
+        
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    3. Gender: &nbsp;Male<input type="radio" name="Gender" id="male" required> &nbsp; Female<input type="radio" name="Gender" id="female" required> </p><br>
+    <p style="margin-top: 1px;">
+    4. Date of Birth : <input type="date" name="DOB" id="DOB">
+    </p>
+    <p style="margin-top: 3px;">5.Address:
+    <textarea name="Address" id="Address" cols="40" rows="5" placeholder="Enter Address"></textarea>
+    </p>
+    <p>
+        6.Telephone Number: <input type="tel" name="Telephone" id="Telephone" placeholder="Enter Mobile Number">
+    </p>
+    7.Email: <input type="email" name="email" id="email" required placeholder="Enter Mail id"> &nbsp; &nbsp;&nbsp;
+    8. password: <input type="password" name="password" id="password" required>
+    <div style="color: crimson;">
+    <h3>Education History :- </h3>
+    <p style="font-size: 20px;">Qualification</p>
+     1.<select name="qualification" id="qualification">
+        <option value="10th_marks">10<sup>th</sup></option>
+        <option value="12th_marks">12<sup>th</sup></option>
+       
+    </select>
+    &nbsp; &nbsp;Percentage(without %)<input type="number" name="marks" id="marks">
+    &nbsp;&nbsp;Grade : <input type="text" name="grade" id="grade">
+    <br>
+    <div style="margin-top: 10px;">
+    2.<select name="qualification" id="qualification">
+        <option value="12th_marks">12<sup>th</sup></option>
+        <option value="10th_marks">10<sup>th</sup></option>
+       
+    </select>
+    &nbsp; &nbsp;Percentage(without %)<input type="number" name="marks" id="marks">
+    &nbsp;&nbsp;Grade : <input type="text" name="grade" id="grade">
+</div>
+</div>
+<div style="color: crimson;">
+    <!-- <p style="font-size: 20px;">Skills</p> -->
+    Skills :
+    Coding<input type="checkbox" name="coding" id="coding">
+    Gaming<input type="checkbox" name="gaming" id="gaming">
+    Chess<input type="checkbox" name="chess" id="chess">
+</div>
+
+<div style="color: crimson;">
+    Work Experience/Employment/Training <select name="Work_Experience" id="Work_Experience">
+        <option value="1_year">1 years</option>
+        <option value="1_year">2 years</option>
+        <option value="1_year">3 years</option>
+        <option value="1_year">4 years</option>
+        <option value="1_year">5 years</option>
+        <option value="1_year">6 years</option>
+        <option value="1_year">7 years</option>
+        <option value="1_year">8 years</option>
+        <option value="1_year">9 years</option>
+        <option value="1_year">10 years</option>
+    </select>
+    <br>
+    Personal statement : <textarea name="statement" id="statement" cols="40" rows="10" placeholder="Enter Personal statement"></textarea>
+</div>
+
+<input type="submit" value="SUBMIT">
+<input type="button" value="CLEAR"  >
+
+</body>
+</html>
+
+
+Output:
+ 
+Practical 8 Code and Output:
+Objective : Create a web page showing India’s map and create hotspot on five different states and link to the e-government site of the respective states
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <img src="./downloads/map.jpg" alt="image" usemap="#mymap" width="100%">
+    <map name="mymap">
+        <area shape="rect" coords="169,377,542,585" href="https://haryana.gov.in/" alt="Haryana" target="blank">
+        <area shape="rect" coords="0,581,396,829" href="https://www.maharashtra.gov.in/1125/Home" alt="mumbai" target="blank">
+        <area shape="rect" coords="0,807,524,1155" href="https://www.goa.gov.in/" alt="goa" target="blank">
+        <area shape="circle" coords="371,105,148" href="https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(union_territory)" alt="jammu kashmir" target="blank">
+        <area shape="circle" coords="297,357,148" href="https://en.wikipedia.org/wiki/Punjab,_India" alt="Punjab" target="blank">
+    </map>
+</body>
+</html>
+
+Output:
+ 
+By clicking on Haryana  ====     Output: 
+Practical 9 CODE and OUTPUT:----------
+Objective : Create a webpage using three frames and link them to an image, audio and video as shown in figure.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgvidaud</title>
+    <style>
+        .sumo{
+            background-color: coral;
+            padding: 5px;
+            border-radius: 400px;
+        }
+        .sumo audio{
+            margin-left: 400px;
+        }
+        .sumo img{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sumo">
+        
+        <audio src="./i am albatroz.mp3" controls>music</audio> <br>
+        <img src="./downloads/vodafone.png" alt="image" width="300px" height="300px" usemap="#mymap">
+        <video src="./Linux Tutorial for Beginners - 1 - Introduction.mp4" controls loop width="600px" height="300px"></video>
+    </div>
+    <map name="mymap">
+        <area shape="rect" coords="2,10,223,224" href="https://www.myvi.in/?cid=del" alt="vodafone" target="blank">
+    </map>
+</body>
+</html>
+ 
+Output:                 
+
+Practical 10 Code and Output :------
+Objective: Create a webpage having six frame and link each frame with five different webpages.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <style>
+        body{
+            background-image: url(./indiahd.jpg);
+            background-size: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Assignment 10</h2></center>
+    <center>
+        <iframe src="./map.html" frameborder="1" width="500px" height="400px"></iframe>
+        <iframe src="./Resume.html" frameborder="1" width="500px" height="400px"></iframe>
+        <iframe src="./styling_table.html" frameborder="1" width="500px" height="600px"></iframe>
+        <iframe src="./timetable.html" frameborder="1" width="800px"height="600px"></iframe>
+        <iframe src="./wtlab1.html" frameborder="1" width="600px"height="500px"></iframe>
+        <iframe src="./webcomp_himanshu.html" frameborder="1" width="100%" height="700px"></iframe>
+    </center>
+</body>
+</html>
+
+Output:  
+
+ 
+ 
+
+
+Practical 11 Code and Output:----------
+Objective : Create the following frameset as shown in figure.
+Code 1.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+
+    
+    
+</head>
+<frameset cols="200,*">
+    <frame src="sideframe.html" name="side">
+        <frameset cols="100%,*">
+            <frame src="c.html" name="main">
+        </frameset>
+</frameset>
+<body>
+    
+</body>
+</html>
+
+Code 2. Left side frame section
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+</head>
+<style>
+    body{
+        background-color: #c4ffe1;
+        font-size: 100%;
+        color: #a85151;
+
+    }
+        a:link{
+            color:#0000ff;
+        }
+        a:visited{
+            color:#0000a0;
+        }
+        a:hover{
+            color:#0000ff;
+        }
+        a:active{
+            color:#ff8000;
+        }
+        
+        h1{
+            text-align: center;}
+            li{
+                padding: 5px;
+                list-style-type: style none;
+            }
+        
+</style>
+<body>
+    <div id="MainBox">
+        <a href="https://www.w3schools.in/c-tutorial/" target="blank" style="color: #0000ff;">C programming</a>
+        <!-- <p> C Programming <a href=""></a></p> -->
+        <ul type="square">
+            <li>
+                <a href="c.html" target="main">Home</a>
+            </li>
+            <li>
+                <a href="overview.html" target="main">Overview</a>
+            </li>
+            <li>
+                <a href="datatypes.html" target="main">Datatypes</a>
+            </li>
+            <li>
+                <a href="variables.html" target="main">Variables</a>
+            </li>
+            <li>
+                <a href="operators.html" target="main">Operators</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+Code3.  Home section
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C programming</title>
+    <style>
+        body{
+            background-color: #f1f190;
+            font-size: 100%;
+            color: #a85151;
+        }
+    </style>
+</head>
+<body>
+    <center>
+      <h2>  C Tutorial </h2>
+    </center>
+    <p>C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
+
+        Why to Learn C Programming?
+        C programming language is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. <h3>Key Advantages of C Programming</h3>
+        <ul>
+            <li>Easy to learn</li>
+            <li>Structured language</li>
+            <li>It produces efficient programs</li>
+            <li>It can handle low-level activities</li>
+            <li>It can be compiled on a variety of computer platforms</li>
+            
+        </ul>
+        <h3>Facts about C</h3>
+        <ol type="i">
+            <li>C was invented to write an operating system called UNIX.</li>
+            <li>C is a successor of B language which was introduced around the early 1970s.</li>
+            <li>The language was formalized in 1988 by the American National Standard Institute (ANSI).</li>
+            <li>The UNIX OS was totally written in C.</li>
+            <li>Today C is the most widely used and popular System Programming Language.</li>
+            <li>Most of the state-of-the-art software have been implemented using C.</li>
+        </ol>
+         <br>
+         <h3>Hello World using C Programming.</h3>
+         Just to give you a little excitement about C programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link <br>
+         #include <stdio.h>
+        
+            int main() {
+               /* my first program in C */
+               printf("Hello, World! \n");
+               
+               return 0;
+            }
+        
+        <h3>Applications of C Programming</h3>
+        C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use of C are - <br>
+        <ol type="a">
+            <li>Operating Systems</li>
+            <li>Language Compilers</li>
+            <li>Assemblers</li>
+            <li>Text Editors</li>
+            <li>Print Spoolers</li>
+            <li>Network Drivers</li>
+            <li> Modern Programs</li>
+            <li> Databases</li>
+            <li>Language Interpreters</li>
+        </ol>
+        <h3>Audience</h3>
+        This tutorial is designed for software programmers with a need to understand the C programming language starting from scratch. This C tutorial will give you enough understanding on C programming language from where you can take yourself to higher level of expertise.
+        <h3>Prerequisites</h3>
+        Before proceeding with this tutorial, you should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages will help you in understanding the C programming concepts and move fast on the learning track.</p>     
+</body>
+</html>
+
+Code 4. Overview section 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+<style>
+    body{
+            background-color: #f1f190;
+            font-size: 100%;
+            color: #a85151;
+        }
+        p{
+            font-size: 100%;
+            
+        }
+</style>
+</head>
+    <center>
+        <h2>Overview</h2>
+
+    </center>
+    <p> 
+        C is a general-purpose, high-level language that was originally developed by Dennis M. Ritchie to develop the UNIX operating system at Bell Labs. C was originally first implemented on the DEC PDP-11 computer in 1972. <br>
+
+In 1978, Brian Kernighan and Dennis Ritchie produced the first publicly available description of C, now known as the K&R standard. <br>
+
+The UNIX operating system, the C compiler, and essentially all UNIX application programs have been written in C. C has now become a widely used professional language for various reasons :-
+<ol type="i">
+    <li>Easy to learn</li>
+    <li>Structured languageIt produces efficient programs</li>
+    <li>It can handle low-level activities</li>
+    <li>It can be compiled on a variety of computer platforms</li>
+    
+</ol>
+<h3>Facts about C</h3>
+<ol>
+    <li>C was invented to write an operating system called UNIX.</li>
+    <li>C is a successor of B language which was introduced around the early 1970s.</li>
+    <li>The language was formalized in 1988 by the American National Standard Institute (ANSI).</li>
+    <li>The UNIX OS was totally written in C.</li>
+    <li>Today C is the most widely used and popular System Programming Language.</li>
+    <li>Most of the state-of-the-art software have been implemented using C.</li>
+    <li>Today's most popular Linux OS and RDBMS MySQL have been written in C.</li>
+</ol>
+<h3>Why use C?</h3>
+C was initially used for system development work, particularly the programs that make-up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as the code written in assembly language. Some examples of the use of C might be :-
+<ol type="a">
+    <li>Operating Systems</li>
+    <li>Language Compilers</li>
+    <li>Assemblers</li>
+    <li>Text Editors</li>
+    <li>Print Spoolers</li>
+    <li>Network Drivers</li>
+    <li>Modern Programs</li>
+    <li>Databases</li>
+    <li>Language Interpreters</li>
+    
+</ol>
+<h3>Utilities</h3>
+<h4>C Programs</h4>
+A C program can vary from 3 lines to millions of lines and it should be written into one or more text files with extension ".c"; for example, hello.c. You can use "vi", "vim" or any other text editor to write your C program into a file. <br>
+This tutorial assumes that you know how to edit a text file and how to write source code inside a program file
+</p>
+<body>
+    
+</body>
+</html>
+
+Code 5. Data type section
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <style>
+        body{
+            background-color: #f1f190;
+            font-size: 100%;
+            color: #a85151;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Datatypes In C Language</h2>
+    </center>
+    <p><b></b>Data types </b> in c refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.</p>
+    <table cellpadding="10px" border="5px" width="900px">
+        <thead>
+            <th>Sr.No</th>
+            <th>Types of Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1.</td>
+                <td style="text-align: center;"><h3>Basic Types</h3>They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2.</td>
+                <td style="text-align: center;">
+                    <h3>Enumerated types</h3>
+                    They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3.</td>
+                <td style="text-align: center;">
+                <h3>The type void</h3>
+                The type specifier void indicates that no value is available.
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4.</td>
+                <td style="text-align: center;"><h3>Derived types</h3>
+                They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <h4>The array types and structure types are referred collectively as the aggregate types. The type of a function specifies the type of the function's return value. We will see the basic types in the following section, where as other types will be covered in the upcoming chapters.</h4>
+</body>
+</html>
+
+Code 6. Variable section page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frames</title>
+    <style>
+        body{
+            background-color: #f1f190;
+            font-size: 100%;
+            color: #a85151;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Variables In C Language</h2>
+    </center>
+    <p>A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.</p>
+    <p>The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive. Based on the basic types explained in the previous chapter, there will be the following basic variable types :-</p>
+    <table cellpadding="5px" border="5px" width="1000px" >
+        <thead>
+            <th>Sr.No</th>
+            <th>Type & Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1.</td>
+                <td style="text-align: center;"><h3>char </h3>
+                Typically a single octet(one byte). It is an integer type.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2.</td>
+                <td style="text-align: center;"><h3>int</h3>
+                    The most natural size of integer for the machine.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3.</td>
+                <td style="text-align: center;"><h3>Float</h3>
+                    A single-precision floating point value.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4.</td>
+                <td style="text-align: center;"><h3>Double</h3>
+                    A double-precision floating point value.</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5.</td>
+                <td style="text-align: center;"><h3>Void</h3>
+                    Represents the absence of type.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+Code 7.  Operator section page 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <style>
+        body{
+            background-color: #f1f190;
+            font-size: 100%;
+            color: #a85151;
+        }
+    </style>
+</head>
+<center>
+    <h2>Operators In C Language</h2>
+</center>
+<p>An operator is a symbol that tells the compiler to perform specific mathematical or logical functions. C language is rich in built-in operators and provides the following types of operators:-</p>
+<ul type="square">
+    <li>Arithmetic Operators</li>
+    <li>Relational Operators</li>
+    <li>Logical Operators</li>
+    <li>Bitwise Operators</li>
+    <li>Assignment Operators</li>
+    <li>Misc Operators</li>
+</ul>
+<h2>All Done</h2>
+<body>
+    
+</body>
+</html>
+
+Output: 
+ 
+ 
+ 
+ 
+ 
+
+Practical 12 Code and Output:----------- 
+Objective : Create an iframe and write some line before and after it.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12 Web technology</title>
+    <style>
+        body{
+            background-image: url(./COMPIMAGES/amritsarhd.jpg);
+            background-size: 100%;
+        }
+        h1,p{
+            text-align: center;
+            color: white;
+            
+        }
+        p{
+            color:black;
+            font-size: 30px;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Assignment 12</h1>
+    <p>This is the Physics Wallah Site linked here using the iframe tag Okay </p>
+    <iframe src="https:www.physicswallah.com" frameborder="2" width="100%" height="500px"></iframe>
+    <h3 >All done Now</h3>
+</body>
+</html>                                             Output:   
+CSS INTRODUCTION :---
+What is CSS?
+•	CSS stands for Cascading Style Sheets
+•	CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+•	CSS saves a lot of work. It can control the layout of multiple web pages all at once
+•	External stylesheets are stored in CSS files
+CSS Syntax:-
+ A CSS rule consists of a selector and a declaration block.
+
+ 
+
+
+
+Simple selectors (select elements based on name, id, class):-
+Different types of simple selectors:
+•	element selector - The element selector selects HTML elements based on the element name.
+•	id selector - The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element. To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+•	class selector - The class selector selects HTML elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the class name.
+•	Universal selector - The universal selector (*) selects all HTML elements on the page.
+Combinator selectors:-
+A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS:
+•	descendant selector (space) - The descendant selector matches all elements that are descendants of a specified element.
+•	child selector (>) - The child selector selects all elements that are the children of a specified element.
+•	adjacent sibling selector (+) - The adjacent sibling selector is used to select an element that is directly after another specific element. Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+•	general sibling selector (~) - The general sibling selector selects all elements that are next siblings of a specified element.
+
+Pseudo-Class selectors:-
+A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+•	Style an element when a user mouses over it.
+•	Style visited and unvisited links differently.
+•	Style an element when it gets focus.
+
+Syntax:	selector:pseudo-class { property: value; }
+The most commonly used pseudo-classes:
+
+•	:focus - It is used to select an element which is currently focused by the user. It works on user input elements used in forms and is triggered as soon as the user clicks on it. 
+•	:first-child - The :first-child selector is used to select the specified selector, only if it is the first child of its parent.
+•	:lang - The :lang() selector is used to select elements with a lang attribute with the specified value.
+
+Pseudo-element  selector:-
+A CSS pseudo-element is used to style specified parts of an element.
+For example, it can be used to:
+•	Style the first letter, or line, of an element.
+•	Insert content before, or after, the content of an element.
+Syntax:	 selector::pseudo-element { property: value; }
+
+Different types of Pseudo-element:
+•	::first-line - The ::first-line pseudo-element is used to add a special style to the first line of a text.
+•	::first-letter - The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+•	::before - The ::before pseudo-element can be used to insert some content before the content of an element.
+•	::after - The ::after pseudo-element can be used to insert some content after the content of an element.
+•	::marker - The ::marker pseudo-element selects the markers of list items.
+•	::selection - The ::selection pseudo-element matches the portion of an element that is selected by a user. The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+
+Attribute selector:-
+The [attribute] selector is used to select elements with a specified attribute.
+Different types of attribute selectors:
+•	[attribute=”value”] - The [attribute="value"] selector is used to select elements with a specified attribute and value.
+•	[attribute~=”value”] - The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+•	[attribute|=”value”] - The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+•	[attribute^=”value”] - The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+•	[attribute*=”value”] - The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+
+Background Image:-
+The background-image property sets one or more background images for an element. By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+E.g.	body { background-image: url("img_tree.gif"), url("paper.gif"); background-color: #cccccc; }
+The above example set two background images for the <body> element.
+
+background-origin:-
+The background-origin property specifies the origin position (the background positioning area) of a background image.
+Different values used in background-origin property:
+•	padding-box - Default value. The background image starts from the upper left corner of the padding edge.
+•	border-box - The background image starts from the upper left corner of the border.
+•	content-box - The background image starts from the upper left corner of the content.
+•	Initial - Sets this property to its default value.
+•	inherit - Inherits this property from its parent element.
+
+background-position:-
+The background-position property sets the starting position of a background image.
+Different values used in background-position:
+•	left top, left center, left bottom, right top, right center, right bottom, center top, center center, center bottom.
+[ If you only specify one keyword, the other value will be "center" ]
+•	x% y% - The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%.
+•	xpos ypos - The first value is the horizontal position and the second value is the vertical. The top left corner is 0 0. Units can be pixels (0px 0px) or any other CSS units. If you only specify one value, the other value will be 50%. You can mix % and positions.
+•	initial - Sets this property to its default value.
+•	inherit - Inherits this property from its parent element.
+Syntax:	background-position: value;
+
+background-repeat:-
+The background-repeat property sets if/how a background image will be repeated. By default, a background-image is repeated both vertically and horizontally.
+Different values used in background-repeat property:
+•	repeat - The background image is repeated both vertically and horizontally.  The last image will be clipped if it does not fit. This is default.
+•	repeat-x - The background image is repeated only horizontally.
+•	repeat-y - The background image is repeated only vertically.
+•	no-repeat - The background-image is not repeated. The image will only be shown once.
+•	space - The background-image is repeated as much as possible without clipping. The first and last image is pinned to either side of the element, and whitespace is distributed evenly between the images.
+•	round - The background-image is repeated and squished or stretched to fill the space (no gaps).
+
+background-size:-
+The background-size property specifies the size of the background images.
+Different values in background-size property:
+•	auto - Default value. The background image is displayed in its original size.
+•	length - Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto".
+•	percentage -  Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto".
+•	cover - Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.
+•	contain - Resize the background image to make sure the image is fully visible.
+
+Box-Model:-
+In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The box model allows us to add a border around elements, and to define space between elements. 
+Explanation of the different parts:
+•	Content - The content of the box, where text and images appear.
+•	Padding - Clears an area around the content. The padding is transparent.
+•	Border - A border that goes around the padding and content.
+•	Margin - Clears an area outside the border. The margin is transparent.
+Example:
+Demonstration of the box model:
+div {	width: 300px;    border: 15px solid green;    padding: 50px;    margin: 20px;   }
+
+
+
+Different CSS Properties:-
+
+ i. align-content: The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.
+ii. align-items: The align-items property specifies the default alignment for items inside the flexible container.
+iii. align-self: The align-self property specifies the alignment for the selected item inside the flexible container.
+iv. font-family: The font-family property specifies the font for an element.
+The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font (Georgia, book antiqua, times new roman, arial, etc.).
+v. font-size: The font-size property sets the size of a font.
+vi. font-style: The font-style property specifies the font style for a text (normal, italic, oblique).
+vii. font-weight: The font-weight property sets how thick or thin characters in text should be displayed (normal, bold, bolder, lighter, numeric {100, 200, etc}).
+viii. opacity: The opacity property sets the opacity level for an element.
+The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.
+ix. text-align: The text-align property specifies the horizontal alignment of text in an element (left, right, center, justify).
+x. text-decoration: The text-decoration property specifies the decoration added to text, and is a shorthand property for.
+•	text-decoration-line - The text-decoration-line property sets the kind of text decoration to use (like underline, overline, line-through).
+(none, underline, overline, line-through).
+•	text-decoration-color - The text-decoration-color property specifies the color of the text-decoration (underlines, overlines, linethroughs).
+•	text-decoration-style - The text-decoration-style property sets the style of the text decoration (like solid, wavy, dotted, dashed, double).
+xi. text-justify - The text-justify property specifies the justification method of text when text-align is set to "justify" (auto, inter-word, inter-character, none).
+xii. visibility - The visibility property specifies whether or not an element is visible.
+Position property :-
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+    There are five different position values:
+•	position:static; - HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom, left, and right properties. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+•	position:relative; - An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+•	position:fixed; - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located.
+•	position:absolute; - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. 
+•	position:sticky; - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Display property :-
+The display property specifies the display behavior (the type of rendering box) of an element.
+Some values used in display property:
+•	inline - Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+•	block - Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+•	contents - Makes the container disappear, making the child elements children of the element the next level up in the DOM.
+•	flex - Displays an element as a block-level flex container
+•	grid - Displays an element as a block-level grid container.
+•	inline-block - Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.
+
+Overflow property :-
+The CSS overflow property controls what happens to content that is too big to fit into an area. It specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. 
+Different values used in overflow property:
+•	visible - By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box.
+•	hidden - With the hidden value, the overflow is clipped, and the rest of the content is hidden.
+•	Scroll - Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it).
+•	Auto - The auto value is similar to scroll, but it adds scrollbars only when necessary.
+•	x and y - The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+overflow-x specifies what to do with the left/right edges of the content.
+overflow-y specifies what to do with the top/bottom edges of the content.
+Transition property :-
+The transition property is a shorthand property for:
+
+i. transition-property: The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes). 
+Different values used:
+•	none - No property will get a transition effect.
+•	all - Default value. All properties will get a transition effect.
+•	property - Defines a comma separated list of CSS property names the transition effect is for.
+
+ii. transition-duration:  The transition-duration property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.
+Values used:
+•	time - Specifies how many seconds or milliseconds a transition effect takes to complete. Default value is 0s, meaning there will be no effect.
+
+iii. transition-timing-function: The transition-timing-function property specifies the speed curve of the transition effect.
+This property allows a transition effect to change speed over its duration.
+Different values used:
+•	ease - Default value. Specifies a transition effect with a slow start, then fast, then end slowly .
+•	linear - Specifies a transition effect with the same speed from start to end.
+•	ease-in - Specifies a transition effect with a slow start.
+•	ease-out - Specifies a transition effect with a slow end.
+•	ease-in-out - Specifies a transition effect with a slow start and end.
+
+iv. transition-delay: The transition-delay property specifies when the transition effect will start.
+The transition-delay value is defined in seconds (s) or milliseconds (ms).
+Values used:	
+•	time - Specifies the number of seconds or milliseconds to wait before the transition effect will start.
+Transform property:-
+The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+Different values used in transform property (2D&3D):
+Value	Description	Units & Example
+1.	Translate
+•	translate(x,y) 
+•	translate3d(x.y,z)
+•	translateX|Y|Z(x|y|z)	
+Defines a 2D translation
+Defines a 3D translation
+Defines a translation, using only the value for the X, Y, Z-axis respectively.	In Pixels
+:translate(+- 25px,+- 25px);
+:translate3d(20px,20px,20px);
+:translateX(10px);
+(Can have both negative and positive values).
+2.	Scale
+•	scale(x,y) 
+•	scale3d(x.y,z)
+•	scaleX|Y|Z(x|y|z)
+	
+Defines a 2D scale transfor.
+Defines a 3D scale transfor.
+Defines a scale transformation, using only the value for the X, Y, Z-axis respectively.
+
+	In numbers
+:scale(1.1,1.1);
+:scale3d(1.1,1.1,1.1);
+:scaleX(1.1);
+(Can have decimal values).
+
+
+
+
+
+
+
+
+3.	Rotate
+•	rotate(angle) 
+•	rotate3d(x,y,z,angle)
+•	rotateX|Y|Z(angle)
+	Defines a 2D rotation
+Defines a 3D rotation
+Defines a 3D rotation along the X, Y, Z-axis respectively.	
+In Degress
+:rotate(40deg);
+:rotate3d(1,1,1,40deg);
+:rotateX(10deg);
+
+4.	Skew
+•	skew(x-angle,y-angle)
+•	skewX|Y(angle)
+
+
+
+
+	Defines a 2D skew transfor. along the X-axis and Y-axis
+Defines a 2D skew transformation along 
+the X-axis or Y-axis respectively.	In Degress
+:skew(10deg,10deg);
+
+:skewX(20deg);
+
+
+
+
+
+5.	Matrix
+•	matrix(n,n,n,n,n,n)
+•	matrix3d	
+Defines a 2D transformation, using a matrix of six values
+Defines a 3D transformation, using a 4x4 matrix of 16 values
+	In Numbers
+:matrix(0.586,0.8,-0.8,    0.586,40,10);
+(Can have decimal, positive and negative values).
+
+
+Transform-origin :-
+The transform-origin property allows you to change the position of transformed elements.
+2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.
+Different values used in transform-origin property:
+•	x-axis - Defines where the view is placed at the x-axis. 
+Possible values: (left,center,right,length,%).
+•	y-axis - Defines where the view is placed at the x-axis. 
+Possible values: (left,center,right,length,%).
+•	z-axis - Defines where the view is placed at the x-axis(for 3D transformations). 
+Possible values: (left,center,right,length,%).
+
+
+
+
+CSS Practicals AND oUTputs:
+Practical 13 Code and Output----------------
+Objective : Create a list in HTML using CSS as shown in figure
+Html part
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment13.css">
+</head>
+<body>
+    <div class="container">
+    <div class="list">
+        <ul>
+            <li>Home page</li>
+            <li>Musings</li>
+            <li>My Town</li>
+            <li>Links</li>
+            <a href="https://www.google.com" target="blank">Google</a>
+        </ul>
+    </div>
+    <div class="content">
+        
+        <h2>My first web Page </h2>
+        <p>Welcome to my styled page </p>
+        <p>It lacks image , but atleast it has style .And it has link they dont go anywhere ...</p>
+        <p>there should be more ,but i dont know what yet</p>
+        <p>Made 4April 2021 <br>
+        by myself</p>
+    </div>
+</div>
+</body>
+</html>
+
+CSS part :
+body{
+    background-image: url(./downloads/background2.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+   
+}
+.container{
+    display: flex;
+}
+.list ul li{
+    color: chartreuse;
+    list-style-type: none;
+    border: coral solid;
+    border-right:20px solid red;
+    margin: 30px;
+    display: flex; 
+    height: 30px;
+    width: 100px;
+    
+}
+.list ul li:hover{
+    background-color: black;
+}
+.content{
+    /* position:relative; */
+    margin-left: 200px;
+    margin-bottom: 500px;
+    padding: 0 100px;
+    
+
+}
+h2{
+    border: outset;
+    color: chartreuse;
+}
+p{
+    color: white;
+}
+.list ul a:hover{
+    color: red;
+    background-color: black;
+    
+}
+a:visited{
+    color: chartreuse;
+}
+.list a:active{
+    color: yellow;
+    border: 2px green;
+}
+.content h2:hover{
+    color: red;
+    background-color: black;
+    box-shadow:20px 10px 100px; border-radius: 5px;
+    padding: 4px;
+    transform: scaleY(1.3); transition: 1s;
+}
+.content:hover{
+    color:chartreuse;
+    background-color: black;
+    box-shadow: 20px 10px 100px; border-radius: 5px;
+    padding: 5px; transform: scaleX(1.5);transition: 1s;
+}
+
+Output :
+ 
+ 
+
+
+
+
+
+Practical 14 Code and Output--------------- 
+Objective : Create a Zebra table using CSS in HTML
+Html part :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment14.css">
+</head>
+<body>
+    
+    <table border="5px" width="200px" cellpadding="25px" height="100px">
+        <thead>
+            <th class="whitehead" >ID</th>
+            <th class="whitehead">Name</th>
+            <th class="whitehead">Major</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="black">1001</td>
+                <td class="black" >Gopl Murthy</td>
+                <td class="black">Physics</td>
+            </tr>
+            <tr>
+                <td class="white">1002</td>
+                <td class="white">Joy Sen</td>
+                <td class="white">Economics</td>
+            </tr>
+            <tr>
+                <td class="black">1003</td>
+                <td class="black">Chandro Yadav</td>
+                <td class="black">Chemistry</td>
+            </tr>
+            <tr>
+                <td class="white">1004</td>
+                <td class="white">Shalini Gupta</td>
+                <td class="white">Zoology</td>
+            </tr>
+            <tr>
+                <td class="black">1005</td>
+                <td class="black">Vivek Kumar</td>
+                <td class="black">Maths</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+CSS part:
+body{
+    background-image: url(./downloads/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+table{
+    margin-left: 400px;
+    margin-top: 100px;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+
+}
+.whitehead{
+    background-color: red;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique; 
+}
+.whitehead:hover{
+    transform:scaleX(1.5); transition: 1s; background-color: crimson; color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.black:hover{
+    transform: scaleY(1.4); transform: 1s; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:chartreuse;
+    box-shadow: 20px 10px 100px; border-radius: 5px;
+}
+.white:hover{
+    background-color: red; color: black; transform: scaleY(1.4);transition: 1s; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  box-shadow: 20px 10px 100px; border-radius: 5px; color: darkturquoise;
+}
+Output : 
+ 
+Practical 15 code and output :------------
+Objective : Create a CSS based button with a hover able dropdown menu
+Html part:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+   <a href="https://www.youtube.com/watch?v=l8zlKap1JEo" target="blank"> <button class="btn"><i><b>Subscribe Now </i> </b> </button></a>
+   <a href="https://www.msit.in/"target="blank"><button class="click"><i> <b>Click Me </b> </i></button></a>  <br>
+   <a href="https://www.youtube.com/watch?v=5v1w0V4GPrE" target="blank"><button class="third"><b><i>Don't click Here</i></b></button></a>
+   <button class="dis"><b><i>Disabled</i></b></button>
+
+    <!-- Drop down menu  -->
+    <div class="dropdown">
+    <button class="dropbtn">Hover Me</button>
+        <div class="content">
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.yahoo.com">Yahoo</a>
+            <a href="https://www.mozillafirefox.com">Mozilla</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+CSS part:
+body{
+    background-image: url(./downloads/background2.jpg);
+    background-repeat: no-repeat; background-size:cover;
+}
+.btn{
+    margin-left: 400px; margin-top: 200px;
+    display: inline-block; padding: 15px ; font-size: 25px; cursor: pointer;
+    text-align: center; outline: none;color: black; background-color: red;
+    border-radius: 20px; box-shadow: 0 9px #999;
+}
+.btn:hover{
+    color: chartreuse; transform: scaleX(1.5);transition: 1s;
+}
+.click{
+    display: inline-block; padding: 10px; font-size: 25px;
+    text-align: center; color: black;background-color: chartreuse; box-shadow: 0px 7px crimson;
+    margin-left: 50px;
+    border-radius: 30px; cursor: pointer;
+}
+.click:hover{
+    color: chartreuse; background-color: black; transform: scaleX(1.6);transition: 1s;
+    box-shadow: 0 8px gold; 
+    
+}
+.third{
+    display: inline-block; padding: 15px ; font-size: 25px ; cursor: pointer; text-align: center; outline: none; color: white; background-color: red;
+    border-radius: 40px; box-shadow: 0 5px #999; margin-left: 500px; margin-top: 50px;
+}
+.third:hover{
+    color: red; font-family: fantasy; background-color: black; 
+    transform: scaleX(1.5); transition: 1s; font-size: 25px;
+}
+.dis{
+    opacity: 0.5; font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; display:grid; text-align: center;
+    margin-left: 600px; margin-top: 50px; border-radius: 10px;
+    cursor: not-allowed;
+}
+.dis:hover{
+    color: red; background-color: black; transform: scaleY(1.5); transition: 0.4s; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.dropbtn{
+    color: white; background-color: red; font-size: 25px; font-family: Arial, Helvetica, sans-serif; outline-color: aqua; cursor: pointer; border-radius: 30px; text-align: center; padding: 10px; box-shadow: 0 6px #999;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.content{
+    display: none;
+    position: absolute;
+     background-color: aqua; color: black; border-radius: 10px;
+    box-shadow: 0 7px red;
+    
+     outline: none; margin-bottom: 100px;
+}
+.content a{
+    color: black; padding: 12px 16px; text-decoration:underline;
+    display: block; 
+    border-radius: 30px;
+}
+.content a:hover{
+    background-color: red;
+
+}
+.dropdown:hover .content {
+    display: block;
+    
+}
+
+
+OUTPUT :
+ 
+ 
+Practical 16 Code and Output:-------
+Objective : Use two images and using CSS transition property on hover change from one to another
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black; background-image:url(./downloads/background2.jpg); background-repeat: no-repeat; background-size: cover;
+        }
+        #container{
+            background-color: red; color: white;width:300px; height: 300px; background-image: url(./downloads/map.jpg); background-size: contain;
+            transition-property:  background-image;  transition-duration: 2s; transition-delay: 0.5s; display: flex; justify-content:center;
+            align-items:center; transition-timing-function: ease-in-out; border-radius: 10px;
+        }
+        #container:hover{
+            background-color:cyan; color: red; font-size: 25px; border-radius: 30px; height: 400px; width: 400px; background-image: url(./COMPIMAGES/amritsarhd.jpg); background-repeat: no-repeat; background-size:contain; transition-duration: 2s;transition-delay: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p>Image Transition</p>
+    </div>
+</body>
+</html>
+
+
+
+Output :
+ 
+ 
+Practical 17 Code and output:-------
+Objective: Demonstrate 2d and 3d transform using CSS Property
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex; align-items: center; justify-content: center; background-color: burlywood; height: 90vh;
+        }
+        .box{
+            background: brown;
+            border: 4px solid black; border-radius: 10px; height: 300px; width: 300px; align-items: center; display: flex; justify-content: center;
+             color: white; font-size: 25px; transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(45deg);
+        }
+        .box2{
+            display: flex;justify-content: center; align-items: center; background-color: black; color: white; height: 300px; width: 300px; transition: all 1s ease-in-out;  font-size: 25px; border: 4px solid red; margin-left: 30px; border-radius: 8px;
+        }
+        .box2:hover{
+            transform: rotate(360deg);
+        }
+        .box3{
+            display: flex;justify-content: center; align-items: center; background-color: rgb(75, 72, 235); color: white; height: 300px; width: 300px; transition: all 1s ease-in-out;  font-size: 25px; border: 4px solid green; margin-left: 30px; border-radius: 8px;
+        }
+        .box3:hover{
+            transform: skew(45deg);
+        }
+        .box4{
+            display: inline-block; justify-content: center; align-items: center; background-color: rgb(75, 72, 235); color: white; height: 300px; width: 300px; transition: all 1s ease-in-out;  font-size: 25px; border: 4px solid green; margin-left: 30px; border-radius: 8px; text-align: center;
+        }
+        .box4:hover{
+            transform:translateX(-340px)
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+        <div class="box2">
+            this is the second box
+        </div>
+        <div class="box3">
+            Third box
+        </div>
+        <div class="box4">
+           Hello friends
+        </div>
+    </div>
+</body>
+</html>
+
+OUTPUT:
+ 
+ 
+ 
+ 
+
+
+
+
+Transform part 2:
+Code :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex; align-items: center; justify-content: center; background-color: burlywood; height: 90vh;
+        }
+        .box{
+            background: brown;
+            border: 4px solid black; border-radius: 10px; height: 300px; width: 300px; align-items: center; display: flex; justify-content: center;
+             color: white; font-size: 25px; transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            transform: translate(-123px ,-120px);
+        }
+        .box2{
+            display: flex;justify-content: center; align-items: center; background-color: black; color: white; height: 300px; width: 300px; transition: all 1s ease-in-out;  font-size: 25px; border: 4px solid red; margin-left: 30px; border-radius: 8px;
+        }
+        .box2:hover{
+            transform:translate3d(5ch,0.4in,5em)
+        }
+        .box3{
+            display: flex;justify-content: center; align-items: center; background-color:pink; color: black; height: 300px; width: 300px; transition: all 1s ease-in-out;  font-size: 25px; border: 4px solid green; margin-left: 30px; border-radius: 8px;
+        }
+        .box3:hover{
+            transform: matrix(1,2,-1,1,80,80)
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Fourth box
+        </div>
+        <div class="box2">
+           Fifth box
+        </div>
+        <div class="box3">
+            Sixth box
+        </div>
+        
+    </div>
+</body>
+</html>
+
+Output:
+ 
+ 
+
+Practical 18 Code and Output:--------
+Objective : Write about India using an external CSS sheet
+Html Part :-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incredible Cities Of INDIA</title>
+    <link rel="stylesheet" href="stylecomp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header" id="top">
+        <nav>
+            <a href="#bottom"><img src="./COMPIMAGES/incredibleindia.jpg" alt="this is a logo image" width="10px" style="border-radius: 10px; margin-left: 0px;" ></a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CITIES</a></li>
+                    <li><a href="">INFO</a></li>
+                    <li><a href="">GLOBAL CHAT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>INCREDIBLE CITIES OF INDIA</h1> <br>
+            <P>Can a place have all the wonders of Earth? No! Not really. Unless you are talking about India. India is an incredible place with over 100 spoken dialects and languages, various cultural forms and religious practices. It’s land is remarkable too.
+
+                There is the great Himalayan range up North, the Deccan plateaus, lush green plains and much more. India is the only country that has a subcontinent and an ocean named after it. India is the perfect travel destination for many because of it’s vast and deep secrets. <br> If you want some pleasant weather during the summer months, there is always Jammu and Kashmir and various other places up North. If you want a pleasant weather during the winter, <br> there is Tamil Nadu and places down South to choose from. There are also hill stations, perfect for vacationing. Lots of beaches are also present in India. <br> It’s lush fertile soil makes it a haven for farmers and ecologists of the world.</P>
+            <a href=""class="hero-button">VISIT US TO KNOW MORE</a>
+        </div>
+    </section>
+    <section class="cities">
+        <h1>Incredible Cities Of INDIA</h1> <br>
+        <p class="random">Some Incredible Cities of INDIA are :- </p>
+        <div class="row">
+            <div class="cities-col">
+            <h3>LADAKH</h3>
+            <p>Leh & Ladakh, situated amidst the Great Himalayas and the Karakoram ranges in the scenic state of Jammu and Kashmir, are two of the most spectacular places in the world where scores of tourists from across the globe throng annually. Emblems of pure paradisiacal beauty, Leh & Ladakh are all about awe-inspiring landscapes, picturesque green oasis, scintillating monasteries and quaint hamlets. You are taken in by the breathtaking beauty the moment you land in this incredible mountain town. Get mesmerised by the amazingly pristine blue sky and transfer to a world of complete solitude admiring the mountain flowers, the snow covered peaks, the streams flowing by and the deep valleys. Monks in maroon robes, men trailing behind herd of sheep and the lilting mountain music, are some of the common sights and sounds of Leh &Ladakh</p>
+        </div>
+        <div class="cities-col">
+            <h3>AMRITSAR</h3>
+            <p>The city of Amritsar is well known for the Harmandir Sahib which is popularly known as “The Golden Temple”. The Golden Temple is one of the most essential and spiritual places for the Sikhs.The great Sikh saint, “Guru Ram Das”, who was also the “Fourth Sikh Guru”, was the founder of the holy city Amritsar. It is said that Guru Ram Das bought the land from the villagers with the Sikh Donations in 700 rupees. The site was chosen by “Guru Amar Das”. He wished to build a town in the land which would have a human-made pool in the central part</p>
+        </div>
+        <div class="cities-col">
+            <h3>SHIMLA</h3>
+            <p>The journey begins with local curving streets, followed by purple Rhododendron flower plants with their dark green leaves along the two sides of the roads. It is pleasuring when smooth, little-lasting noise of every step makes local streets alive. Every step on every road, some uphill and some downhill, eventually gathers at the heart of the city, “The Mall Road”, the busiest, most crowded area of the city. From a far, crowd of people gives an image of millions of ants gathered around piece of sugar to dominate it. Street is enriched with all kind of material that one sees through out India. There is a train of shops with goods of jewellary, handicraft materials, cloths with embroidery, and many more hanging in front to tempt. Heading in the north on the street takes to the haven of Shimla named ‘kufri’. It is clear, snowy, and flat downhill area for skiing. At Kufri when cold waves of air penetrate</p>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="imagess">
+        <h1 style="text-align: center;">Some Beautiful Pictures Of Incredible India Cities</h1> <br>
+        <p style="text-align: center;">These all places are as beautiful as heaven </p>
+        <div class="row">
+            <div class="imagess-col">
+                
+                <img src="./COMPIMAGES/ladakhhd.jpg" alt="LADAKH" height="400px">
+                <div class="layer">
+                    <h3>LADAKH</h3>
+                </div>
+            </div>
+            <div class="imagess-col">
+                
+                <img src="./COMPIMAGES/amritsarhd.jpg" alt="AMRITSAR" height="400px">
+                <div class="layer">
+                    <h3>AMRITSAR</h3>
+                </div>
+            </div>
+            <div class="imagess-col">
+                
+                <img src="./COMPIMAGES/shimlahd.jpg" alt="SHIMLA" height="400px">
+                <div class="layer">
+                    <h3>SHIMLA</h3>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+    <section class="therefacilities">
+        <h1>Their Free/very low price Facilities </h1> <br>
+        <p class="random">Hearts Of indian people so big because they provide some more facilities to poor people who can't afford things</p>
+        <div class="row">
+            <div class="therefacilities-col">
+                <img src="./COMPIMAGES/travelling.jpg" alt="image" height="300px">
+                <h3>Free travelling </h3>
+                <p>Travelling is an amazing way to learn a lot of things in life. A lot of people around the world travel every year to many places. Moreover, it is important to travel to humans. Some travel to learn more while some travel to take a break from their life.</p>
+            </div>
+            
+            <div class="therefacilities-col">
+                <img src="./COMPIMAGES/dharmsala.jpg" alt="image"height="300px">
+                <h3>Dharamsala's At Very Cheap Prices</h3>
+                <p>If your heart aches for adventures and your soul yearns for solitude, then you must visit the quaint & beautiful hill station Dharamshala. The town is nestled in the snow-capped mountains of Himachal Pradesh and can be visited all around the year.</p>
+            </div>
+            <div class="therefacilities-col">
+                <img src="./COMPIMAGES/cafeteria.jpg" alt="cafeteria image"height="300px">
+                <h3>Free Tasty and healthy food</h3>
+                <p>Food is the basic human need to stay alive. Moreover, it is the need of every living organism. Therefore it is important that we should not waste food. Our world consists of different types of cultures. These cultures have varieties of dishes of food in them.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="testimonials">
+        <h1 style="text-align: center;" class="ratededo">Ratings</h1> <br>
+        <p style="text-align: center;" class="random" >Visitors Says About Us</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="./user2.jpg" alt="user image">
+                <p class="review">Every Thing Is OSSM I Love Your Facilities And Food Also I love To Visit India Again</p> 
+                <h3> SALMAN KHAN</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+            <div class="testimonial-col">
+                <img src="./user3.jpg" alt="user image">
+                <p class="review">Same Thing Which Salman Said Bcoz Wo Pehle Hi Gussa H Use Shaadi Mein Na Bulaya Isliye Jo Sallu kahe </p>
+                <h3>KATRINA KAIF</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cta">
+        <h2 class="intrest">If SomeOne Intrested</h2> <br>
+        <a href=""class="hero-button">CONTACT US</a>
+    </section>
+    
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>If You Think I Am A Travel Agent So I AM Not I Am an Indian Who Never Be Shy To Talk ABout His Country <br> I AM SO PROUD TO BE AN INDIAN</p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p class="madeby" id="bottom">Made by <a href="#top"><i class="fa fa-heart"></i></a>Himanshu Cet Rank-456</p>
+    </section>
+</body>
+</html>
+
+CSS Part:-
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "Nunito", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./COMPIMAGES/indiahd.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navlinks ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.navlinks ul li::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  .text-box h1 {
+    font-size: 62px;
+  }
+  .text-box p {
+    margin: 10px 2 40px;
+    font-size: 14;
+    color: white;
+  }
+  .hero-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; font-size: 25px;
+  }
+  .hero-button:hover {
+    border: 1px solid white;
+    background: #f44336;
+    transition: 1s;
+  }
+
+  .cities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  p {
+    color: rgba(245, 107, 107, 0.849);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cities-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .cities-col:hover {
+    box-shadow: 0 0 30px 0px rgba(14, 29, 240, 0.973);
+  }
+  
+
+
+
+
+  .imagess {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .imagess-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .imagess-col img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+  }
+  .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+  }
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5%;
+  }
+  .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+  }
+
+
+  .therefacilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .therefacilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .therefacilities-col img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .therefacilities-col p{
+    padding: 0;
+  }
+  .therefacilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+
+
+
+
+  .testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .testimonial-col img{
+    height: 40px;
+  
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .testimonal-col p {
+    padding: 0;
+  }
+  .testimonial-col h3 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .testimonial-col fa{
+      color:#f44336;
+  }
+  
+
+
+  .cta{
+    margin:100px auto;
+    width:80%;
+    background-image: linear-gradient(rgba(71, 70, 70, 0.7),rgba(139, 136, 136, 0.7)),url(images/library.jpg);
+    background-position: center;
+    background-size:cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h2{
+  color:#fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.review{
+ font-weight: 500px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 12px;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  .footer p{
+    color:red; 
+  }
+  
+  .text-box h1{
+      margin-top: 40px;
+  }
+
+  .text-box h1:hover{
+    background-color: red; color: white; border: 5px solid black; transform: scaleY(1.5);font-size: 30px;padding: 5px; border-radius: 8px; font-style: oblique; transition: 1s;
+  }
+  .cities h1:hover{
+    background: black;color: white; border: 5px solid red ; transform: scaleY(1.5); font-size: 40px; padding: 5px;border-radius: 8px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; transition: 1s;
+  }
+  .random{
+      font-size: 25px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .imagess h1:hover{
+    background: black;color: white; border: 5px solid red ; transform: scaleY(1.5); font-size: 40px; padding: 5px;border-radius: 8px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; transition: 1s;
+  }
+  .imagess p{
+    font-size: 25px;
+  }
+  .therefacilities h1:hover{
+    background: black;color: white; border: 5px solid red ; transform: scaleY(1.5); font-size: 40px; padding: 5px;border-radius: 8px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; transition: 1s;
+  }
+  .ratededo:hover{
+    background: black;color: white; border: 5px solid red ; transform: scaleY(1.5); font-size: 40px; padding: 5px;border-radius: 8px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; transition: 1s;
+  }
+  .intrest{
+    font-size: 50px;
+  }
+
+.footer h4{
+  font-size: 30px;
+}
+.icons{
+  font-size: 30px;
+}
+.madeby{
+  color: red; font-size: 27px;
+}
+
+Output:-
+ 
+  
+ 
+ 
+ 
+
+
+
+
+BOOTSTRAP :-
+INTRODUCTION--------------------
+What is Bootstrap?
+•	Bootstrap is a free front-end framework for faster and easier web development
+•	Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+•	Bootstrap also gives you the ability to easily create responsive designs
+Advantages of Bootstrap:-
+•	Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+•	Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+•	Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
+•	Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+What is Responsive Design?
+Responsive web design is about creating a website which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+Meta tag:-
+Meta tags provide information about the webpage in the HTML of the document. This information is called "metadata" and while it is not displayed on the page itself, it can be read by search engines and web crawlers. Example of meta tags include the <title> and <description> elements.
+Bootstrap Grid System:-
+Bootstrap's grid system allows up to 12 columns across the page. If you do not want to use all 12 columns individually, you can group the columns together to create wider columns.
+Grid Classes:-
+The Bootstrap grid system has four classes:
+•	Xs :-  (for phones - screens less than 768px wide)
+•	Sm :- (for tablets - screens equal to or greater than 768px wide)
+•	Md :- (for small laptops - screens equal to or greater than 992px wide)
+•	Lg :- (for laptops and desktops - screens equal to or greater than 1200px wide)
+The classes above can be combined to create more dynamic and flexible layouts.
+Container class:-
+Containers are used to pad the content inside of them, and there are two container classes available:
+1.	The .container class provides a responsive fixed width container
+Use the .container class to create a responsive, fixed-width container.
+2.	The .container-fluid class provides a full width container, spanning the entire width of the viewport
+Use the .container-fluid class to create a full width container, that will always span the entire width of the screen (width is always 100%).
+
+Columns in a grid:-
+You can use a maximum of 12 columns in a Bootstrap grid system. Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth explanation for how the grid system comes together.
+Bootstrap Table:-
+A basic Bootstrap table has a light padding and only horizontal dividers.  The .table class adds basic styling to a table. Here are some table classes:-
+•	Striped Rows:- The .table-striped class adds zebra-stripes to a table.
+•	Bordered Table:- The .table-bordered class adds borders on all sides of the table and cells.
+•	Hover Rows :- The .table-hover class adds a hover effect (grey background color) on table rows.
+•	Condensed Table:- The .table-condensed class makes a table more compact by cutting cell padding in half.
+
+
+
+Contextual Classes:-
+Contextual classes can be used to color table rows (<tr>) or table cells (<td>). The contextual classes that can be used are:
+Class	Description
+.active	Applies the hover color to the table row or table cell
+.success	Indicates a successful or positive action
+.info	Indicates a neutral informative change or action
+.warning	Indicates a warning that might need attention
+.danger	Indicates a dangerous or potentially negative action
+Responsive Tables:-
+The .table-responsive class creates a responsive table. The table will then scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference.
+
+Bootstrap Table:-
+A basic Bootstrap table has a light padding and only horizontal dividers.  The .table class adds basic styling to a table. Here are some table classes:-
+•	Striped Rows:- The .table-striped class adds zebra-stripes to a table.
+•	Bordered Table:- The .table-bordered class adds borders on all sides of the table and cells.
+•	Hover Rows :- The .table-hover class adds a hover effect (grey background color) on table rows.
+•	Condensed Table:- The .table-condensed class makes a table more compact by cutting cell padding in half.
+
+
+
+Contextual Classes:-
+Contextual classes can be used to color table rows (<tr>) or table cells (<td>). The contextual classes that can be used are:
+Class	Description
+.active	Applies the hover color to the table row or table cell
+.success	Indicates a successful or positive action
+.info	Indicates a neutral informative change or action
+.warning	Indicates a warning that might need attention
+.danger	Indicates a dangerous or potentially negative action
+Responsive Tables:-
+The .table-responsive class creates a responsive table. The table will then scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference.
+
+Button Styles
+Bootstrap provides different styles of buttons. To achieve the button styles, Bootstrap has the following classes:
+•	btn
+•	btn-default
+•	btn-primary
+•	btn-success
+•	btn-info
+•	btn-warning
+•	btn-danger
+•	btn-link
+The button classes can be used on an <a>, <button>, or <input> element.
+Button Sizes:-
+Bootstrap provides four button sizes. The classes that define the different sizes are:
+•	btn-lg
+•	btn-sm
+•	btn-xs
+Active/Disabled Buttons:-
+A button can be set to an active (appear pressed) or a disabled (unclickable) state. The class active makes a button appear pressed, and the class disabled makes a button unclickable.
+Bootstrap Typography:-
+Typography is a feature of Bootstrap for styling and formatting the text content. It is used to create customized headings, inline subheadings, lists, paragraphs, aligning, adding more design-oriented font styles and much more.
+•	Headings:- All HTML headings, <h1> through <h6>, are available.
+•	Small:- In Bootstrap the HTML <small> element is used to create a lighter, secondary text in any heading. Indicates smaller text (set to 85% of the size of the parent)
+•	Mark:- represents text which is marked or highlighted for reference or notation purposes.
+•	Abbr:- Stylized implementation of HTML’s <abbr> element for abbreviations and acronyms to show the expanded version on hover.
+•	Blockquote:- For quoting blocks of content from another source within your document. Wrap <blockquote class="blockquote"> around any HTML as the quote.
+•	Lead:- Makes a paragraph stand out.
+•	Text-left:- Indicates left-aligned text.
+•	Text-center:- Indicates center-aligned text.
+•	Text-right:- Indicates right-aligned text.
+•	Text-justify:- Indicates justified text.
+•	Text-nowrap:- Indicates no-wrap text.
+•	Text-uppercase:- Indicates uppercased text.
+•	Text-lowercase:- Indicates lowercased text.
+•	Text-capitalize:- Indicates capitalized text.
+•	List-unstyled:- Removes the default list-style and left margin on list items. 
+•	text-decoration-underline:- represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.
+•	text-decoration-line-through:- represents element that are no longer relevant or no longer accurate.
+Jumbotron:-
+A jumbotron is a big grey box used to indicate some text which requires extra attention. Any text that seems to be important can be written inside a jumbotron to make it appear big and noticeable.
+Full-width Jumbotron:-
+If you want a full-width jumbotron without rounded borders, add the .jumbotron-fluid class and a .container or .container-fluid inside of it.
+Glyphicons:-
+Bootstrap includes 260 glyphs from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, you should include a link back to Glyphicons whenever possible.
+Use glyphicons in text, buttons, toolbars, navigation, or forms.
+
+bOOTSTRAP Practicals AND oUTputs:
+Pratical 19 Code and Output::-----------
+Objective : Create a Webpage with 3 Equal columns using bootstrap 
+Code :- 
+ <div class="container" style="margin-bottom: 20px;">
+        <div class="row">
+            <div class="col border bg-danger border-dark rounded">
+                1 of 2
+            </div>
+            <div class="col border bg-danger border-dark rounded">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-warning border border-info rounded" style="text-align: center;">        
+                hell (3 of 12 cols)
+            </div>
+            <div class="col-9 bg-warning border border-info rounded" style="text-align: center;">
+                heaven (9 of 12 cols)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border bg-success border-warning rounded">
+                1 of 3
+            </div>
+            <div class="col border bg-success border-warning rounded">
+                2 of 3
+            </div>
+            <div class="col border bg-success border-warning rounded">
+                3 of 3
+            </div>
+        </div>
+    </div>
+Output : 
+ 
+Practical 20 Code and output:------
+Objective : Create a Webpage containing various types of bootstrap tables
+Tables  
+Code : 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap tables</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <table class="table-responsive">
+        <caption class="text-nowrap text-primary">Eleventh Class Record</caption>
+        <h4 class="text-center text-info">Class Record</h4>
+        <table class="table table-hover table-striped table-bordered ">
+            
+            <thead class="thead-dark table-warning">
+                <th>S.No</th>
+                <th>Class</th>
+                <th>Total marks(500)</th>
+                <th>Grade</th>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>1.</td>
+                    <td>Eleventh</td>
+                    <td>400</td>
+                    <td>B</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>2.</td>
+                    <td>Eleventh</td>
+                    <td>479</td>
+                    <td>A</td>
+                </tr>
+                <tr class="table-success">
+                    <td>3.</td>
+                    <td>Eleventh</td>
+                    <td >499</td>
+                    <td class="table-warning border border-danger">A+++</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="text-center border border-warning text-success bg-dark">
+                    <td colspan="3">Average Grade</td>
+                    <td>A</td>
+                </tr>
+            </tfoot>
+        </table>
+    </table>
+</div>
+    <div class="container-fluid">
+    <h5 class="text-center text-success">Incredible Cities of India</h5>  
+    <table class="table-responsive">
+        <caption class="text-nowrap text-center text-danger">Some incredible Cities of India </caption>
+        <table class="table border border-danger table-dark text-center table-hover">
+            
+            <thead class="thead-light">
+                <th>S.no</th>
+                <th>City</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Ladakh</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Shimla</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Haryana</td>
+                </tr>
+            </tbody>
+            <tfoot class="border-warning">
+                <tr>
+                    <td colspan="2" class="text-wrap">Our India is a So  SO SO SO SO SO Incredible Country</td>
+                </tr>
+            </tfoot>
+        </table>
+    </table>      
+    </div>
+    <table class="table-responsive">
+        <table class="table table-sm border borderless table-striped table-hover text-center ">
+            <thead>
+                <th>Subject</th>
+                <th>Teacher</th>
+            </thead>
+            <tbody class="table-danger">
+                <tr>
+                    <td>Web Technology</td>
+                    <td>Ms.Nikita</td>
+                </tr>
+                <tr>
+                    <td>C Programming</td>
+                    <td>Ms.Minal Dhankar</td>
+                </tr>
+                <tr>
+                    <td>TeleCommunication</td>
+                    <td>Ms.Manju Dhillon</td>
+                </tr>
+                <tr>
+                    <td>Fundamental of Information Technology</td>
+                    <td>Mr.Surajpal Chauhan</td>
+                </tr>
+            </tbody>
+        </table>
+    </table>    
+</body>
+</html>        
+Output:-  
+Practical 21 Code and output:------
+Objective ::  Create a Webpage containing various types of bootstrap images
+Bootstrap Images
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body{
+        background-image: url(https://wallpaperaccess.com/full/187161.jpg);
+        background-repeat: no-repeat; background-size: cover;
+      }
+    </style>
+</head>
+<body>
+    <h3 class="text-center text-danger">Images in bootstrap</h3>
+    <div class="container-fluid">
+    <img src="../WEB DEVELOPMENT/pichai.jpg" class="img-fluid img-thumbnail " width="400px" height="400px" alt="">
+    <img src="../web competition/COMPIMAGES/cafeteria.jpg" class="img-thumbnail" width="400px" alt="">
+    <img src="../WEB DEVELOPMENT/COMPIMAGES/indiahd.jpg" class="img-fluid img-thumbnail border border-5 border-success" width="500px" alt="">
+  </div>
+    
+  <!--------------------  Aligning Images in Bootstrap  : here only rounded works but the float right and left doesn't  ------------------- -->
+  <div class="container-fluid" width="100%">
+    <img src="../web competition/COMPIMAGES/incredibleindia.jpg" class="rounded float-start" width="400px" height="300px" alt="">
+  <img src="../web competition/COMPIMAGES/ladakhhd.jpg" class="rounded float-end" width="400px" height="300px" alt="" style="margin-top: 10px;">      <!--  Here only rounded works but float-right doesn't -->
+
+  </div> <br><br><br><br><br><br> <br> <br><br><br><br><br><br>
+  <div class="container-fluid "width="100%">
+    <img src="../web competition/COMPIMAGES/indian-flag.jpg" class=" img-fluid  float-start rounded-circle"  alt="">
+     <img src="../web competition/COMPIMAGES/ladakhhd.jpg" class=" img-fluid border border-3 border-danger rounded mx-auto d-block" width="400px" height="400px" alt="">
+     <img src="../web competition/COMPIMAGES/amritsarhd.jpg"  class="img-fluid float-end rounded-pill border border-4 border-warning " height="300px" width="600px" alt="">
+  </div>
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+
+<!-- <img src="..." class="rounded float-right" alt="..."> -->
+</body>
+</html>
+
+Output:
+ 
+ 
+
+Practical 22 Code and output:------
+Objective : Create a Webpage containing various types of Bootstrap Buttons
+Bootstrap Buttons:
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Himanshu </title>
+  </head>
+  <body>
+      <h3 class="text-center text-warning">Buttons</h3>
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="click me">
+<input class="btn btn-primary" type="submit" value="touch me">
+<input class="btn btn-primary" type="reset" value="come on">
+<br>
+<h3 class="text-center text-danger">Outline Buttons</h3>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+<h3 class="text-center text-success ">Large and small buttons </h3>
+<button type="button" class="btn btn-outline-primary btn-sm ">sm btn</button>
+<button type="button" class="btn btn-outline-secondary btn-lg ">lg button </button>
+
+<h3 class="text-center text-secondary">Disable buttons</h3>
+<button type="button" class="btn btn-lg btn-primary disabled">Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg disabled">Button</button>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary btn-outline-warning" type="button">D-grid col Button</button>
+    <button class="btn btn-primary btn-outline-danger" type="button">D-grid col buttons </button>
+  </div>
+  <br>
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button">d-grid gap 2 button</button>
+    <button class="btn btn-primary" type="button">same </button>
+  </div>
+  <br>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+Output:- 
+ 
+ 
+Practical 23 Code and output:------
+Objective: Create a Webpage containing various Bootstrap typography classes
+Bootstrap Typography
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Himanshu Typograpghy </title>
+    <style>
+        body{
+            background-image: url(data:image/jpeg;base64,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);
+            background-repeat: no-repeat; background-size: cover; 
+        }
+        h4:hover{
+            background-color: white; background-size: 30px; transform: scaleY(1.5);transition: 1s; padding: 10px; font-size: 30px; border-radius: 10px;
+        }
+        #Hell{
+            line-height: 39px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>This is using h1 tag</h1>
+    <p class="h1 text-danger">By using the h1 Bootstrap class</p>
+    
+    <!-- using two classes here we get to know that the class written later works first  -->
+    
+    
+    <p class="h1 h6 text-center">Hello by using the h1 and h6 class : that class work which have greatest value </p>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Customizing text in Bootstrap  -->
+    <p class="h3 text-warning">
+    1. Class used : text-muted for making the text Faded . </p>
+        <h4 class="text-muted text-danger float-end">Text muted Class</h4>
+
+    <br> <hr>
+    <p class="h3">
+        Using the display headings :- 
+    </p>
+    <div class="text-danger">
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <h1 class="display-6">Display 6</h1>
+
+    <h1>Overwriting two classes of display </h1>
+    <h1 class="display-1 display-5 text-warning">Overwriting two display classes So that display works which have greater value </h1>
+    <p class="display-1">Display 1 with p tag</p>
+</div>
+
+    <h4 class="text-danger">Using Lead Paragraph :- </h4>
+    <p class="lead text-success">This is a paragraph using the lead class used for making a paragraph different form regular para's</p>
+
+<h4 class="text-danger">Using Html Inline tags </h4>
+<p id="Hell" class="text-success">Hello <mark>Friends</mark> This friend text get higlighted  
+<small> <mark> Small</mark> inline tags used for making print like legal text or copyright </small> <br> 
+<strong>Usage of <mark>Strong inline tag</mark> </strong> <u>Using of <mark> U tag</mark> </u> <em> Using the <mark> Em inline tag </mark></em> <br>
+<del>Using the <mark>del tag</mark></del> <mark> S Inline tag</mark> <s>This tag is used to make the text be treated as no longer accurate </s> 
+</p> 
+
+<h5 class="text-danger">Using Abbreviation is Bootstrap :- </h5>
+    <p class="text-warning" style="font-size: 25px;"><abbr title="attribute">Attribute</abbr></p>
+    <p class="text-danger text-center" style="font-size: 30px;"><abbr title="Hyper text markup language">Html</abbr></p>
+
+    <h5 class="text-light">BlockQuote</h5>
+    <blockquote class="blockquote text-light">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+
+      <figure class="text-warning text-center">
+          <blockquote class="blockquote">
+            A blockQuote class 
+          </blockquote>
+          <figcaption class="blockquote-footer text-success">
+            i love to do <cite title="Coding">coding </cite> 
+          </figcaption>
+      </figure>
+
+      <h3 class="text-danger">Description list Alignment :- </h3>
+      <dl class="row border border-2 border-danger text-center" >
+          <dt class="col-3 text-white">Web Technology</dt>
+          <dd class="col-9 text-warning bg-dark border rounded">Ms.Nikita Malik</dd>
+
+          <dt class="col-3 text-white">C programming</dt>
+          <dd class="col-9 text-warning  bg-dark border rounded">Ms.Minal Dhankar</dd>
+
+          <dt class="col-3 text-white">TeleCommunication</dt>
+          <dd class="col-9 text-warning bg-dark border rounded">Ms.Manju Dhillon</dd>
+        
+            <dt class="col-3 text-white">FIT</dt>
+            <dd class="col-9 text-warning bg-dark border rounded">Mr.Suraj Pal Chauhan</dd>
+            <dt class="col-3 text-white">Maths</dt>
+            <dd class="col-9 text-warning bg-dark border rounded">Ms.Jyoti Dagar</dd>
+      </dl>
+
+      <p class="fw-bolder text-warning">This is the bolder text</p>
+      <p class="fw-light text-warning">This text is lighter</p>
+      <p class="fst-italic text-warning">Italic text</p>
+      <p class="text-lowercase text-warning">TEXT WRITTEN IN UPPERCASE BECOME LOWERCASE </p>
+      <p class="text-uppercase text-warning">text written in lowercase become uppercase  </p>
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+Output:
+  
+  
+ 
+ 
+
+
+
+
+
+
+Practical 24 Code and output:------
+Objective : Create a webpage to display the headings using Bootstrap Jumbotron and Glyphicons
+Jumbotron ==> 
+Code:
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+    <title>Himanshu</title>
+    <style>
+        #hell{
+            align-items: center; margin-left: 550px;
+        }
+    </style>
+  </head>
+  <body>
+    <h3 class=" display-3 text-danger text-center fw-bolder">Jumbotron</h3>
+ 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-center text-success">Fluid jumbotron</h1>
+          <p class="lead text-light bg-dark border-3 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem eveniet asperiores fuga nobis distinctio nisi molestiae ipsa amet? Autem assumenda maiores vero accusantium cum voluptatum eos voluptatibus fugiat nesciunt.</p>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <h1 class="display-4 text-center">Hello Everyone</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi architecto nesciunt, accusamus eius vero odit ducimus itaque libero numquam.</p>
+        <hr class="my-4">
+        <p class="text-center">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" id="hell" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="blank" role="button" >Learn more</a>
+        </p>
+      </div>
+      <div class="jumbotron">
+      <a href="https://gaana.com/song/agar-tum-saath-ho" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-music"></span>  Music 
+        </a>
+        <a href="#" class="btn btn-outline-warning btn-lg">
+
+        <span class="glyphicon glyphicon-home"> Home</span> </a>
+      </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+Output:
+ 
+
+XML INTRODUCTION:------------
+What is XML?
+•	XML stands for eXtensible Markup Language
+•	XML is a markup language much like HTML
+•	XML was designed to store and transport data
+•	XML was designed to be self-descriptive
+•	XML is a W3C Recommendation
+XML does not DO anything. XML is just information wrapped in tags.
+XML Simplifies Things:-
+•	It simplifies data sharing
+•	It simplifies data transport
+•	It simplifies platform changes
+•	It simplifies data availability
+Many computer systems contain data in incompatible formats. Exchanging data between incompatible systems (or upgraded systems) is a time-consuming task for web developers. Large amounts of data must be converted, and incompatible data is often lost.
+XML stores data in plain text format. This provides a software- and hardware-independent way of storing, transporting, and sharing data.
+XML Separates Data from HTML:-
+When displaying data in HTML, you should not have to edit the HTML file when the data changes. With XML, the data can be stored in separate XML files.
+With a few lines of JavaScript code, you can read an XML file and update the data content of any HTML page.
+XML Structure:-
+XML documents are formed as element trees. An XML tree starts at a root element and branches from the root to child elements. All elements can have sub elements (child elements).
+The terms parent, child, and sibling are used to describe the relationships between elements. Parents have children. Children have parents. Siblings are children on the same level (brothers and sisters). All elements can have text content (Harry Potter) and attributes (category="cooking").
+XML Tree Structure
+ 
+XML Prolog:-
+XML uses a much self-describing syntax. A prolog defines the XML version and the character encoding:
+<?xml version=”1.1” encoding=”utf-8”?>
+XML Properties:-
+•	XML Does Not Use Predefined Tags.
+•	XML is Extensible.
+•	All XML Elements Must Have a Closing Tag.
+•	XML Tags are Case Sensitive.
+•	XML Elements Must be Properly Nested.
+•	XML Attribute Values Must Always be Quoted.
+•	White-space is Preserved in XML .
+•	An element with no content is said to be empty.
+Entity References:-
+Some characters have a special meaning in XML.
+If you place a character like "<" inside an XML element, it will generate an error because the parser interprets it as the start of a new element. To avoid this error, replace the "<" character with an entity reference. There are 5 pre-defined entity references in XML:
+&lt;	<	less than
+&gt;	>	greater than
+&amp;	&	ampersand 
+&apos;	'	apostrophe
+&quot;	"	quotation mark
+
+
+What is an XML Element?
+An XML element is everything from (including) the element's start tag to (including) the element's end tag.
+•	text
+•	attributes
+•	other elements
+•	or a mix of the above
+XML Naming Rules:-
+XML elements must follow these naming rules:
+•	Element names are case-sensitive
+•	Element names must start with a letter or underscore
+•	Element names cannot start with the letters xml (or XML, or Xml, etc)
+•	Element names can contain letters, digits, hyphens, underscores, and periods
+•	Element names cannot contain spaces
+Any name can be used, no words are reserved (except xml).
+Naming Styles:-
+Style	Example	Description
+Lower case	<firstname>	All letters lower case
+Upper case	<FIRSTNAME>	All letters upper case
+Underscore	<first_name>	Underscore separates words
+Pascal case	<FirstName>	Uppercase first letter in each word
+Camel case	<firstName>	Uppercase first letter in each word except the first
+There are no naming styles defined for XML elements. But here are some commonly used:
+
+XML Namespaces:-
+XML Namespaces provide a method to avoid element name conflicts.
+When using prefixes in XML, a namespace for the prefix must be defined. The namespace can be defined by an xmlns attribute in the start tag of an element. The namespace declaration has the following syntax. xmlns:prefix="URI".
+
+What is a DTD?
+DTD stands for Document Type Definition. The purpose of a DTD is to define the structure and the legal elements and attributes of an XML document.
+A DTD can also be used to define special characters or strings, used in the document.
+When to Use a DTD?
+•	With a DTD, independent groups of people can agree to use a standard DTD for interchanging data. 
+•	With a DTD, you can verify that the data you receive from the outside world is valid.
+•	You can also use a DTD to verify your own data.
+Internal DTD:-
+If the DTD is declared inside the XML file, it must be wrapped inside the <!DOCTYPE> definition.
+External DTD:-
+If the DTD is declared in an external file, the <!DOCTYPE> definition must contain a reference to the DTD file.
+PCDATA:-
+PCDATA means parsed character data. Think of character data as the text found between the start tag and the end tag of an XML element.
+PCDATA is text that WILL be parsed by a parser. The text will be examined by the parser for entities and markup. Tags inside the text will be treated as markup and entities will be expanded.
+However, parsed character data should not contain any &, <, or > characters; these need to be represented by the &amp; &lt; and &gt; entities, respectively.
+CDATA:-
+CDATA means character data. CDATA is text that will NOT be parsed by a parser. Tags inside the text will NOT be treated as markup and entities will not be e What is an XML Schema?
+An XML Schema describes the structure of an XML document.
+The XML Schema language is also referred to as XML Schema Definition (XSD).
+The purpose of an XML Schema is to define the legal building blocks of an XML document:
+•	the elements and attributes that can appear in a document
+•	the number of (and order of) child elements
+•	data types for elements and attributes
+•	default and fixed values for elements and attributes
+Schema data types:-
+XML Schema has a lot of built-in data types. The most common types are:
+•	xs:string
+•	xs:decimal
+•	xs:integer
+•	xs:boolean
+•	xs:date
+•	xs:time
+xpanded.
+What is an XML Schema?
+An XML Schema describes the structure of an XML document.
+The XML Schema language is also referred to as XML Schema Definition (XSD).
+The purpose of an XML Schema is to define the legal building blocks of an XML document:
+•	the elements and attributes that can appear in a document
+•	the number of (and order of) child elements
+•	data types for elements and attributes
+•	default and fixed values for elements and attributes
+Schema data types:-
+XML Schema has a lot of built-in data types. The most common types are:
+•	xs:string
+•	xs:decimal
+•	xs:integer
+•	xs:boolean
+Practical 25 Code and output:------
+Objective : Create XML file containing note as the root element and to from ,subject and 
+Body as its child element.
+Code: 
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+<to>
+Mrs. NIKITA MALIK (CEO)</to>
+
+<from>
+HIMANSHU 
+</from>
+
+<subject>
+Regarding Offline Classes in college campus.
+</subject>
+
+<body>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis consectetur quod, 
+architecto, incidunt consequatur fugit exercitationem expedita voluptatibus veritatis, 
+nemo aspernatur rerum sapiente quis similique neque tempore quae ex magni!
+</body>
+</note>
+
+Output:
+ 
+
+
+
+
+Practical 26 Code and output:------
+Objective : Create a well formed XML file having 5 tags food menu , category name ,price and calories . food menu is the main parent element that contains category as the child element .category is the parent element of name , price and calories .
+<?xml version="1.0" encoding="UTF-8"?>
+ <Food_menu>
+    <Category>
+        <name>
+        Shahi Paneer
+        </name>
+        <price>
+        250
+        </price>
+        <calories>
+        400
+        </calories>
+
+        <name>
+        Rajma
+        </name>
+        <price>
+        150
+        </price>
+        <calories>
+        80
+        </calories>
+    </Category>
+ </Food_menu>
+
+
+
+OUTPUT:
+ 
+
+
+
+Practical 27 Code and output:------
+Objective: Create a valid xml document containing the tags mentioned in the 25th question (use internal DTD)
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note [
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+<note>
+<to>Himanshu Singh </to>
+<from>Ashneer grover</from>
+<heading>XML</heading>
+<body>Internal DTD (Data Definition Type) in XML</body>
+</note>
+
+OUTPUT:
+ 
+
+
+
+
+
+
+
+
+Practical 28 Code and output:------
+Objective: Create a valid XML document containing employee as the root tag and empname ,enpno,salary,department as its child tags .Use external DTD to implement it .
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employee SYSTEM "employees.dtd">
+<employee>
+    <empname>
+    Himanshu singh
+    </empname>
+    <empno>
+    3290
+    </empno>
+    <salary>
+    Rs.10,00,000/- p.m
+    </salary>
+    <department>
+    Tech Department
+    </department>
+</employee>
+
+OUTPUT
+ 
+
+
+
+
+
+
+
+Practical 29 Code and output:------
+Objective: Create an external DTD for XML file mentioned in 26th QUES
+XML PART =====
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Food_menu SYSTEM "29th.dtd">
+<Food_menu>
+    <category>
+        <name>
+        Shahi Paneer
+        </name>
+        <price>
+        250
+        </price>
+        <calories>
+        400
+        </calories>
+    </category>
+</Food_menu>
+
+DTD PART===
+<!ELEMENT Food_menu (category,name,price,calories)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT calories (#PCDATA)>
+
+OUTPUT:  
+
+
+
+
+
+Practical 30 Code and output:------
+Objective: Create an XML file and use external style sheet for providing styling to xml file .Each element should use atleast 4 styling attributes. 
+CODE: ==========
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Rule(30).css"?>
+<books>
+    <heading>Welcome To World Wide Web School (W3 School) </heading>
+    <book>
+        <title>Title -: Web Programming</title>
+        <author>Author -: Chrisbates</author>
+        <publisher>Publisher -: Wiley</publisher>
+        <edition>Edition -: 3</edition>
+        <price> Price -: 300</price>
+    </book>
+    <book>
+        <title>Title -: Internet world-wide-web</title>
+        <author>Author -: Ditel</author>
+        <publisher>Publisher -: Pearson</publisher>
+        <edition>Edition -: 3</edition>
+        <price>Price -: 400</price>
+    </book>
+    <book>
+        <title>Title -: Computer Networks</title>
+        <author>Author -: Foruouzan</author>
+        <publisher>Publisher -: Mc Graw Hill</publisher>
+        <edition>Edition -: 5</edition>
+        <price>Price -: 700</price>
+    </book>
+    <book>
+        <title>Title -: DBMS Concepts</title>
+        <author>Author -: Navath</author>
+        <publisher>Publisher -: Oxford</publisher>
+        <edition>Edition -: 5</edition>
+        <price>Price -: 600</price>
+    </book>
+    <book>
+        <title>Title -: Linux Programming</title>
+        <author>Author -: Subhitab Das</author>
+        <publisher>Publisher -: Oxford</publisher>
+        <edition>Edition -: 8</edition>
+        <price>Price -: 300</price>
+    </book>
+</books>
+
+OUTPUT
+ 
+
+Practical 31 Code and output:------
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "31th.xsd">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Category">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="price" type="xs:string"/>
+      <xs:element name="calories" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+
+OUTPUT:
+ 
+
+
+
+
+
+Practical 32 Code and output:------
+Objective: Create XML file in the given format 
+<cart>
+<product>
+        <pname>Notebook </pname>
+        <cost>50 </cost>
+        <discount>10 </discount>
+ </product>
+<product>
+      <pname>PenSet</pname>
+      <cost>150</cost> 
+      <discount>50</discount>
+</product>
+</cart>
+Using XSLT display the XML data in the table format ,Choose different color for product above 100 and below 100.
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "32TH.xml">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/">
+    <html>
+      <body>
+        <h2>Book Information</h2>
+        <table border="1">
+          <tr bgcolor="lightgrey">
+            <th>Book Name</th>
+            <th>Author</th>
+          </tr>
+          <td>
+            Atomic Habits
+          </td>
+          <td>
+            Jeff Bezos
+          </td>
+          <tr>
+            <td>
+              Subtle art of not giving a f
+            </td>
+            <td>
+              Deitel & Deitel
+            </td>
+          </tr>
+          <xsl:for-each select="catalog/cd">
+            <tr>
+              <td><xsl:value-of select="title" /></td>
+              <td><xsl:value-of select="artist" /></td>
+            </tr>
+          </xsl:for-each>
+        </table>
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
+
+
+OUTPUT:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 33 Code and Output:---------
+Objective:
+Write an XML program to accept student details (name, ID, course, CGPA). Write an XSL to display the list of students in descending order of CGPA.
+Source code XML:-
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="practical 33.xsl"?>
+<student_details>
+	<student>
+		<name>Shreya</name>
+		<ID>1754</ID>
+		<course>BCA</course>
+		<CGPA>8.9</CGPA>
+	</student>
+	<student>
+         	<name>Rhythm</name>
+		<ID>6579</ID>
+		<course>BBA</course>
+		<CGPA>9.5</CGPA>
+	</student>
+	<student>
+         	<name>Neha</name>
+		<ID>7658</ID>
+		<course>B.Com</course>
+		<CGPA>8.4</CGPA>
+	</student>
+	<student>
+         	<name>Simran</name>
+		<ID>8687</ID>
+		<course>B.tech</course>
+		<CGPA>4.6</CGPA>
+	</student>
+	<student>
+         	<name>Nikhil</name>
+		<ID>7979</ID>
+		<course>BCA</course>
+		<CGPA>7.3</CGPA>
+	</student>
+</student_details>
+
+Source code XSL:-
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+  <html>
+  <body>
+  <h2>Student Details</h2>
+  <table border="1">
+    <tr bgcolor="#9acd32">
+      <th>name</th>
+      <th>ID</th>
+      <th>course</th>
+      <th>CGPA</th>
+    </tr>
+    <xsl:for-each select="student_details/student">
+    <xsl:sort select="CGPA"/>
+    <tr>
+      <td><xsl:value-of select="name"/></td>
+      <td><xsl:value-of select="ID"/></td>
+      <td><xsl:value-of select="course"/></td>
+      <td><xsl:value-of select="CGPA"/></td>
+    </tr>
+    </xsl:for-each>
+  </table>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>
+
+Output:-
+ 
+
+
+
+
+
+
+
+Practical 34: Code and Output:
+Objective: Create XML file in the given format:
+<cart>
+<product>
+         <pname>Notebook</pbook>
+         <cost>50</cost>
+         <discount>10</discount>
+</product>
+<product>
+         <pname>PenSet</pbook>
+         <cost>150</cost>
+         <discount>50</discount>
+</product>
+</cart>
+Using XSLT display the XML data in the table format, choose different colour of product above 100. 
+Source code XML:-
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="practical 33.xsl"?>
+<cart>
+	<product>
+		<pname>Notebook</pname>
+		<cost>50</cost>
+		<discount>10</discount>
+	</product>
+	<product>
+         	<pname>PenSet</pname>
+         	<cost>150</cost>
+         	<discount>50</discount>
+	</product>
+	<product>
+         	<pname>Marker</pname>
+         	<cost>170</cost>
+         	<discount>20</discount>
+	</product>
+	<product>
+         	<pname>Colour Box</pname>
+         	<cost>250</cost>
+         	<discount>60</discount>
+	</product>
+	<product>
+         	<pname>Pencil Box</pname>
+         	<cost>100</cost>
+         	<discount>15</discount>
+	</product>
+</cart>
+
+ Source code XSL:-
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+  <html>
+  <body>
+  <h2>Stationary Products</h2>
+  <table border="1">
+    <tr bgcolor="#9acd32">
+      <th>pname</th>
+      <th>cost</th>
+      <th>discount</th>
+    </tr>
+    <xsl:for-each select="cart/product">
+    <xsl:if test="cost &gt; 100">
+    <tr>
+      <td><xsl:value-of select="pname"/></td>
+      <td><xsl:value-of select="cost"/></td>
+      <td><xsl:value-of select="discount"/></td>
+    </tr>
+    </xsl:if>
+    </xsl:for-each>
+  </table>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>
+Output:-
+ 
+
+Practical 35: Code and Output:
+Objective: Write a program demonstrating all Operators of Js 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2> <u>Javascript Operators</u></h2>
+        <h4>Arithmetic operators :: Given X=6 and Y=120</h4>
+        <script>
+            var x=6,y=120;
+            document.write("Addition : ",x+y +"<br>");
+            document.write("Subtraction : ",x-y+"<br>");
+            document.write("Muktiplication : ",x*y+"<br>");
+            document.write("Division : ",x/y+"<br>");
+            document.write("Modulus: ",x % y +"<br>");
+            document.write("Increment : ",++x +"<br>");
+            document.write("Decrement : ",--x +"<br>");
+            document.write("Ternary : ",x>y?x:y+"<br>");
+            document.write("Exponential : ",x**y + "<br>");
+
+        </script>
+        <p><u><b>Relational operators</u> :: given a=23, b=44</b></p>
+        <p>Given a=23  and b=44</p>
+        <script>
+            var a =23, b=44;
+            document.write("Equal to (a==23) "+(a==23) + "<br>");
+            document.write("Greater than : (a>b) = "+(a>b)+"<br>");
+            document.write("Less than equal to : (a<=b) = "+(a<=b)+"<br>");
+
+        </script>
+        <p><u><b>Logical Operators</u> :: given u=16 and v=18</b></p>
+        <script>
+            var u=16, v=18;
+            document.write("AND : (u>20 && v<20) = " + (u>20 && v<20)+"<br>");
+            document.write("OR : (u>20 || v<20) = " + (u>20 || v<20)+"<br>");
+            document.write("OR : (!(u==v)) = " + (!(u==v))+"<br>");
+        </script>
+    </center>
+    
+</body>
+</html>
+
+Output: 
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 36: Code and Output:
+Objective: Write a js program to find :
+I.	factorial of a Number 
+II.	prime number In a range
+III.	Reverse of a Number 
+
+Code:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 36</title>
+</head>
+
+<body>
+    <h1 style="border: 2px black solid; text-align: center">
+        Factorial Program in Javascript
+    </h1>
+    <div style="font-size: 40px">
+        <label> Enter the Number to calculate Factorial </label><br />
+        <input style="width: 200px; height: 35px; border-radius: 10px; font-size: 20px" type="text" id="input1" />&nbsp;
+        <button style="width: 100px; height: 40px; border-radius: 10px; font-size: 20px" onclick="fact()">
+    Press
+        </button>
+        <p id="output1">Output:&nbsp;</p>
+    </div>
+    <!-- Prime number-->
+    <h1 style="border: 2px black solid; text-align: center">
+        Prime Number Program in Javascript
+    </h1>
+    <div style="font-size: 40px">
+        <label> Enter the range to find Prime Numbers </label><br />
+        <input style="width: 100px; height: 35px; border-radius: 10px; font-size: 20px" type="text" id="input2_1" />
+        <input style="width: 100px; height: 35px; border-radius: 10px; font-size: 20px" type="text" id="input2_2" />&nbsp;
+        <button style="width: 100px; height: 40px; border-radius: 10px; font-size: 20px" onclick="prime()">
+    Press
+        </button>
+        <p id="output2">Output:&nbsp;</p>
+    </div>
+    <!-- Reverse Number -->
+    <h1 style="border: 2px black solid; text-align: center">
+        Reverse Number Program in Javascript
+    </h1>
+    <div style="font-size: 40px">
+        <label> Enter the Number to Reverse it </label><br />
+        <input style="width: 100px; height: 35px; border-radius: 10px; font-size: 20px" type="text" id="input3" />&nbsp;
+        <button style="width: 100px; height: 40px; border-radius: 10px; font-size: 20px" onclick="reverse()">
+    Press
+        </button>
+        <p id="output3">Output:&nbsp;</p>
+    </div>
+    <script>
+        function reverse() {
+            let num = document.getElementById("input3").value;
+            let rev = 0;
+            let lastDigit;
+            while (num != 0) {
+                lastDigit = num % 10;
+                rev = rev * 10 + lastDigit;
+                num = Math.floor(num / 10);
+            }
+            document.getElementById("output3").innerHTML += rev;
+        }
+    </script>
+    <script>
+        function prime() {
+            var out = 0;
+            let input2_1 = document.getElementById("input2_1").value;
+            let input2_2 = document.getElementById("input2_2").value;
+            for (let i = input2_1; i <= input2_2; i++) {
+                let flag = 0;
+
+                // looping through 2 to user input number
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        flag = 1;
+                        break;
+                    }
+                }
+
+                // if number greater than 1 and not divisible by other numbers
+                if (i > 1 && flag == 0) {
+                    out2 = i;
+                    document.getElementById("output2").innerHTML +=
+                        out2 + "&nbsp;&nbsp;";
+                }
+            }
+        }
+    </script>
+    <script>
+        function fact() {
+            let input1 = document.getElementById("input1").value;
+            let out = 1;
+            for (let index = 1; index <= input1; index++) {
+                out = out * index;
+            }
+            document.getElementById("output1").innerHTML += out;
+        }
+    </script>
+</body>
+
+</html>
+
+
+Output:
+ 
+
+
+
+
+
+
+
+
+
+
+
+Practical 37: Code and Output:
+Objective: Write a js program to wish the user at different hours of the day .
+Code: 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 37</title>
+    <style>
+      body {
+        background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-size: cover;
+      }
+      #wish {
+        text-shadow: 2px 2px 2px white;
+        color: black;
+        font-size: 80px;
+        text-align: center;
+        padding: 200px 0px;
+      }
+      #time {
+        text-shadow: 2px 2px 2px white;
+        color: black;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="time">Time :&nbsp;</h2>
+    <h1 id="wish"></h1>
+    <script>
+      const d = new Date();
+      let hour = d.getHours();
+      let min = d.getMinutes();
+
+      if (min < 10) {
+        // or min = min < 10 ? '0' + min : min;
+        min = "0" + min;
+      } else {
+        min = min + "";
+      }
+      var time = d.getHours() + ":" + min;
+      document.getElementById("time").innerHTML += time;
+      // Condition for Wish
+      if (hour < 5 || hour > 17) {
+        document.getElementById("wish").innerHTML = "It is Evening Do Something";
+      } else if (hour >= 5 && hour < 12) {
+        document.getElementById("wish").innerHTML = "It is Morning Do Something";
+      } else if (hour >= 12 || hour < 5) {
+        document.getElementById("wish").innerHTML = "It is Afternoon Do Something";
+      }
+    </script>
+  </body>
+</html>
+
+
+Output: 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 38: Code and Output:
+Objective: prompt a user for the cost price and selling price of an article and output the profit and loss percentage .
+Code:
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 38</title>
+  </head>
+  <body style="background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-size: cover;">
+    <h1 style="border: 2px black solid;text-shadow: 2px 2px 2px white;
+        color: black; text-align: center">
+        Find Profit or Loss Percentage 
+    </h1>
+    <div
+      style="
+  text-shadow: 2px 2px 2px white;
+        color: black;
+        width: fit-content;
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+      "
+    >
+      <p id="sell">Selling Price:&nbsp;</p>
+      <p id="cost">Cost Price:&nbsp;</p>
+      <p id="profit"></p>
+      <p id="loss"></p>
+    </div>
+    <script>
+      let sellingPrice = prompt("Enter the Selling Price of Article");
+      document.getElementById("sell").innerHTML += sellingPrice;
+      let costPrice = prompt("Enter the Cost Price of Article");
+      document.getElementById("cost").innerHTML += costPrice;
+      if (sellingPrice > costPrice) {
+        let profit = sellingPrice - costPrice;
+        let profitPercentage =parseInt( (profit / costPrice) * 100);
+        document.getElementById(
+          "profit"
+        ).innerHTML += `Profit:&nbsp; ${profitPercentage}%`;
+      } else {
+        let loss = costPrice - sellingPrice;
+        let lossPercentage = parseInt((loss / costPrice) * 100);
+        document.getElementById(
+          "loss"
+        ).innerHTML += `Loss:&nbsp; ${lossPercentage}%`;
+      }
+    </script>
+  </body>
+</html>
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 39: Code and Output:
+Objective: Write a program to input a string from the user and abbreviate it.
+
+Code:
+html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 39</title>
+  </head>
+  <body style="background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-size: cover">
+    <div style="font-size: 40px;text-shadow: 2px 2px 2px white;
+        color: black">
+      <label> Enter the String To Capatilize the First Letter </label><br />
+      <input
+        style="width: 200px; height: 35px; border-radius: 10px; font-size: 20px"
+        type="text"
+        id="string"
+      />
+      <button
+      style="width: 200px; height: 40px; border-radius: 10px; font-size: 20px"
+      onclick="stringCap()"
+    >
+      Press
+    </button>
+    </div>
+    
+    <p id="cString" style="font-size: 40px;">Output:&nbsp;</p>
+    <script>
+      function stringCap() {
+        let str = document.getElementById("string").value;
+        let string = str.charAt(0).toUpperCase() + str.slice(1);
+        document.getElementById("cString").innerHTML += string;
+      }
+    </script>
+  </body>
+</html>
+
+
+Output:
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Practical 40: Code and Output 
+	Objective: write a js program to show event mouse handling
+Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Mouse Events - Button Demo</title>
+</head>
+<body>
+    <button id="btn" style="font-size: 60px;"">Click me with any mouse button: left, right, middle, ...</button>
+    <p id="message"></p>
+    <script>
+        let btn = document.querySelector('#btn');
+
+        // disable context menu when right-mouse clicked
+        btn.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        // show the mouse event message
+        btn.addEventListener('mouseup', (e) => {
+            let msg = document.querySelector('#message');
+            switch (e.button) {
+                case 0:
+                    msg.textContent = 'Left mouse button clicked.';
+                    break;
+                case 1:
+                    msg.textContent = 'Middle mouse button clicked.';
+                    break;
+                case 2:
+                    msg.textContent = 'Right mouse button clicked.';
+                    break;
+                default:
+                    msg.textContent = `Unknown mouse button code: ${event.button}`;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+Output:
+ 
+
